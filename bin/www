@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('EXMA_website_v1');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 11111);
+
+var server = app.listen(app.get('port'), function() {
+	console.log('the exma server listens at port ' + server.address().port);
+	debug('Express server listening on port ' + server.address().port);
+});
