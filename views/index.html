@@ -301,30 +301,29 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="boxed-grey">
-                <form id="contact-form">
+                <form id="contact-form" action="/contact" method="post">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                姓名</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                Email Address</label>
+                                Email</label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="required" /></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
                                 Subject</label>
                             <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
+                                <option value="service">General Customer Service 顧客服務</option>
+                                <option value="suggestions">Suggestions 建議</option>
+                                <option value="product">Product Support 產品服務</option>
                             </select>
                         </div>
                     </div>
@@ -338,7 +337,7 @@
                     </div>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                            Send Message</button>
+                            送出</button>
                     </div>
                 </div>
                 </form>
