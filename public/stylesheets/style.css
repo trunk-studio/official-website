@@ -366,6 +366,7 @@ hr {
 
 .team p.subtitle {
 	margin-bottom: 10px;
+  min-height: 50px;
 }
 
 .avatar {

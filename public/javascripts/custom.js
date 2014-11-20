@@ -1,4 +1,16 @@
 (function ($) {
+	
+	var member = []
+	$('img','.member').width('100%').height('125')
+	$('.col-xs-6.col-sm-3.col-md-2','.member').each(function(i,v){
+		member.push($(v).height())
+	});
+
+	// member = member.sort()
+	// console.log(member[member.length-1])
+	// member.forEach(function(i,v){
+	// 	$('div.team','.member').eq(v).height(member[member.length-1])
+	// })
 
 	new WOW().init();
 
