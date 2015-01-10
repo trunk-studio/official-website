@@ -3,7 +3,12 @@ a,.tp-caption a.btn:hover {
 	color: #67b0d1;
 }
 .top-nav-collapse {
-	background: #67b0d1;
+/*	background: #67b0d1;*/
+background:#333;
+opacity: 0.8;
+}
+.top-nav-collapse > .container > .navbar-header > .navbar-brand >img{
+  width: 20%!important;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
@@ -28,7 +33,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 }
 
 footer {
-    background-color: #67b0d1;
+    /*background-color: #67b0d1;*/
+    background:#333;
 }
 
 .btn-skin {

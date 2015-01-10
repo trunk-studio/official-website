@@ -1,7 +1,7 @@
 (function ($) {
-	
+
 	var member = []
-	$('img','.member').width('100%').height('125')
+	// $('img','.member').width('100%').height('125')
 	$('.col-xs-6.col-sm-3.col-md-2','.member').each(function(i,v){
 		member.push($(v).height())
 	});
@@ -14,7 +14,7 @@
 
 	new WOW().init();
 
-	jQuery(window).load(function() { 
+	jQuery(window).load(function() {
 		jQuery("#preloader").delay(100).fadeOut("slow");
 		jQuery("#load").delay(100).fadeOut("slow");
 	});
