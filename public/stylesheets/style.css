@@ -438,7 +438,9 @@ hr {
 	margin-bottom: 20px;
 }
 
-
+#service .service-desc p{
+  text-align: left;
+}
 
 /* ===========================
 --- Contact
