@@ -51,6 +51,21 @@ a:focus {
     text-decoration: none;
     color: #176e61;
 }
+h2.title {
+  margin-bottom: 5px;
+}
+h2 .head {
+  position: relative;
+  left: 28px;
+}
+h2 .emphasize {
+  position: relative;
+  font-size: 10.3rem;
+  color: #C53C25;
+  font-style: italic;
+  top: 15px;
+  left: 6px;
+}
 .service-desc h5{
     font-size: 25px
 }
@@ -308,6 +323,9 @@ hr {
 	position:relative;
 
 	background: url(../images/bg1.jpg) no-repeat center center;
+  /*background: url(http://www.fixedbyvonnie.com/wp-content/uploads/2015/02/2924217723_a8e5364cc0_b.jpg) no-repeat center center;*/
+  /*background: url(https://assets.entrepreneur.com/content/16x9/822/20150113173007-snowboard.jpeg) no-repeat center center;*/
+  background-size: cover;
 }
 
 #intro.intro {
@@ -374,7 +392,7 @@ hr {
   min-height: 30px;
 }
 .wow{
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .avatar {
@@ -764,6 +782,18 @@ Parallax
 
 }
 @media (max-width:768px) {
+  .intro .slogan h2,
+  h2 .head {
+    font-size: 3rem;
+  }
+  h2 .emphasize {
+    font-size: 7.3rem;
+  }
+  .intro .slogan h4 {
+    color: #fff;
+    text-shadow: -1px 1px 1px #000;
+    font-size: 0;
+  }
 
 	.team.boxed-grey {
 		margin-bottom: 30px;
@@ -772,6 +802,8 @@ Parallax
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
+
+
 
 
 }
@@ -799,7 +831,7 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
-  .navbar-brand >img{width:15%!important;float: right}
-  .navbar-brand h1{display: block!important;float:left;}
+  .navbar-brand >img{width:15%!important;}
+  /*.navbar-brand h1{display: block!important;float:left;}*/
 
 }
