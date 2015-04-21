@@ -635,7 +635,8 @@ figure.effect-bubba img {
 .grid figure img {
     position: relative;
     display: block;
-    min-height: 100%;
+    min-height: 205px;
+    /*min-height: 100%;*/
     max-width: 100%;
     opacity: 0.8;
 }
