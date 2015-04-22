@@ -322,7 +322,7 @@ hr {
 	width:100%;
 	position:relative;
 
-	background: url(../images/bg1.jpg) no-repeat center center;
+	background: url(../images/bg1.jpg) no-repeat center center fixed;
   /*background: url(http://www.fixedbyvonnie.com/wp-content/uploads/2015/02/2924217723_a8e5364cc0_b.jpg) no-repeat center center;*/
   /*background: url(https://assets.entrepreneur.com/content/16x9/822/20150113173007-snowboard.jpeg) no-repeat center center;*/
   background-size: cover;
@@ -635,7 +635,8 @@ figure.effect-bubba img {
 .grid figure img {
     position: relative;
     display: block;
-    min-height: 100%;
+    min-height: 205px;
+    /*min-height: 100%;*/
     max-width: 100%;
     opacity: 0.8;
 }
