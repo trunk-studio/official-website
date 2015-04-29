@@ -4,5 +4,5 @@ web:
     - .:/app
   working_dir: /app
   ports:
-    - "10085:11111"
+    - "10085:10085"
   command: "npm start"
