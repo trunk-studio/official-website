@@ -1,4 +1,6 @@
-EXMA_website_v1
-===============
+Trunk Studio Official Website
+=============================
 
-EXMA official website v1
+Run with fig.
+
+    fig up
