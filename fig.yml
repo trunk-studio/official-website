@@ -5,4 +5,4 @@ web:
   working_dir: /app
   ports:
     - "10085:10085"
-  command: "npm run start"
+  command: "/bin/bash -c 'npm install && npm run start'"
