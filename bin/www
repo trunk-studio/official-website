@@ -3,7 +3,8 @@
 var debug = require('debug')('EXMA_website_v1');
 var app = require('../app');
 
-app.set('port', process.env.PORT || 10085);
+// app.set('port', process.env.PORT || 8080);
+app.set('port', 8080);
 
 var server = app.listen(app.get('port'), function() {
 	console.log('the exma server listens at port ' + server.address().port);
