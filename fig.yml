@@ -1,8 +1,8 @@
 web:
-  image: iojs:1.8.1 
+  image: iojs:1.8.1
   volumes:
     - .:/app
   working_dir: /app
   ports:
     - "10085:10085"
-  command: "npm start"
+  command: "npm run start"
