@@ -20,72 +20,33 @@ router.post('/', function(req, res) {
 
 	var message = {
 		html: util.format(mailContent, contactName, contactEmail, contactSubject, contactMessage),
-		subject: 'EXMA WEBSIDE CONTACT',
+		subject: '[CONTACT] contactSubject',
 		from_email: contactEmail,
 		from_name: contactName,
-		to: [
-			{
-				email: 'kevinxyz77@gmail.com',
-				type: 'to'
-			},
-			{
-				email: 'blackghost0118@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'clonncd@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'whsh320@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'wayne1025tw@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'bird23074035@gmail.com',
-				type: 'bcc'
-			}
-		]
+		to: [{
+			email: 'kyle@trunk-studio.com',
+			type: 'to'
+		}, {
+            email: 'smlsun@trunk-studio.com',
+            type: 'to'
+        }]
 	};
 
 	var messageConfirmation = {
 		html: util.format(mailConfirmation, contactName, contactSubject, contactMessage),
-		subject: 'EXMA WEBSIDE CONTACT',
-		from_email: 'kevinxyz77@gmail.com',
-		from_name: 'KEVIN - Project Manager',
-		to: [
-			{
-				email: contactEmail,
-				type: 'to'
-			},
-			{
-				email: 'kevinxyz77@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'blackghost0118@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'clonncd@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'whsh320@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'wayne1025tw@gmail.com',
-				type: 'bcc'
-			},
-			{
-				email: 'bird23074035@gmail.com',
-				type: 'bcc'
-			}
-		]
+		subject: 'Re: ',
+		from_email: 'support@trunk-studio.com',
+		from_name: '',
+		to: [{
+			email: contactEmail,
+			type: 'to'
+		}, {
+			email: 'kyle@trunk-studio.com',
+		    type: 'bcc'
+		}, {
+			email: 'smlsun@trunk-studio.com',
+			type: 'bcc'
+		}]
 	};
 
 	mandrillClient.messages.send({ 'message': message }, 
