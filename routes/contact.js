@@ -1,11 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var util = require('util');
-var ejs = require('ejs');
 var fs = require('fs');
-
-var mandrill = require('mandrill-api/mandrill');
-var mandrillClient = new mandrill.Mandrill('zc_TYYw-xDDLYu_lJbNqBQ');
 
 /* POST contact mail. */
 router.post('/', function(req, res) {
@@ -48,7 +44,7 @@ router.post('/', function(req, res) {
 			type: 'bcc'
 		}]
 	};
-
+/*
 	mandrillClient.messages.send({ 'message': message }, 
 		function (result) {
 			console.log(result);
@@ -74,6 +70,7 @@ router.post('/', function(req, res) {
 			return;
 		}
 	);
+*/
 });
 
 module.exports = router;
