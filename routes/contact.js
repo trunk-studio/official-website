@@ -28,7 +28,7 @@ router.post('/', function(req, res) {
 	var messageConfirmation = {
 		html: util.format(mailConfirmation, contactName, contactSubject, contactMessage),
 		subject: 'Re: ',
-		from_email: 'support@trunk-studio.com',
+		from_email: 'contact@trunk-studio.com',
 		from_name: '',
 		to: [{
 			email: contactEmail,
