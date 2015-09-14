@@ -23,6 +23,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var sailsMailer = require('sails-service-mailer');
+var config = require('./config/mail');
+console.log('=== config ===', config);
+
+global.server = {};
+
+global.server.mailer = sailsMailer.create(config.mail.type, config.mail.config);
+
+
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/contact', contact);

@@ -3,8 +3,11 @@ var router = express.Router();
 var util = require('util');
 var fs = require('fs');
 
+
 /* POST contact mail. */
 router.post('/', function(req, res) {
+
+	console.log('=== POST contact mail ===');
 
 	var contactName = req.body.name || 'NO_NAME',
 		contactEmail = req.body.email || 'NO_EMAIL',
@@ -19,13 +22,7 @@ router.post('/', function(req, res) {
 		subject: '[CONTACT] contactSubject',
 		from_email: contactEmail,
 		from_name: contactName,
-		to: [{
-			email: 'kyle@trunk-studio.com',
-			type: 'to'
-		}, {
-            email: 'smlsun@trunk-studio.com',
-            type: 'to'
-        }]
+		to: 'kyle@trunk-studio.com, smlsun@trunk-studio.com'
 	};
 
 	var messageConfirmation = {
@@ -44,11 +41,15 @@ router.post('/', function(req, res) {
 			type: 'bcc'
 		}]
 	};
+
+	console.log('=== message ===', message);
+
+	server.mailer.send(message);
 /*
-	mandrillClient.messages.send({ 'message': message }, 
+	mandrillClient.messages.send({ 'message': message },
 		function (result) {
 			console.log(result);
-			mandrillClient.messages.send({ 'message': messageConfirmation }, 
+			mandrillClient.messages.send({ 'message': messageConfirmation },
 				function (result) {
 					console.log(result);
 					res.redirect('/');

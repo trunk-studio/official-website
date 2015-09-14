@@ -524,29 +524,29 @@ html(lang='zh-Hant-TW')
             |             
             p 只要留下您的聯絡方式，我們會以簡訊及 E-Mail 通知您最新的講座及課程資訊！           
             .main-action
-              form(role='form')
+              form(role='form' action='/contact' method='post')
                 .row
                   .col-sm-6
                     .form-group
                       label.sr-only Subject
                       |                       
-                      input.form-control(type='text', placeholder='姓名')
+                      input.form-control(type='text', name='name', placeholder='姓名')
                     |                     
                     .form-group
                       label.sr-only Name
                       |                       
-                      input.form-control(type='text', placeholder='手機號碼')
+                      input.form-control(type='text', name='telphone', placeholder='手機號碼')
                     |                     
                     .form-group
                       label.sr-only Email
                       |                       
-                      input.form-control(type='email', placeholder='E-Mail 信箱')
+                      input.form-control(type='email', name='email', placeholder='E-Mail 信箱')
                   |                   
                   .col-sm-6
                     .form-group
                       label.sr-only Message
                       |                       
-                      textarea.form-control(placeholder='留言訊息', style='height: 100px', rows='6')
+                      textarea.form-control(placeholder='留言訊息', name='message', style='height: 100px', rows='6')
                 |                 
                 button.btn.btn-default(type='submit') 訂閱通知
                 
