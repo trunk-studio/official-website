@@ -22,29 +22,32 @@ router.post('/', function(req, res) {
 		subject: '[CONTACT] contactSubject',
 		from_email: contactEmail,
 		from_name: contactName,
-		to: 'kyle@trunk-studio.com, smlsun@trunk-studio.com'
+		to: 'smlsun@trunk-studio.com, kyle@trunk-studio.com'
 	};
 
-	var messageConfirmation = {
-		html: util.format(mailConfirmation, contactName, contactSubject, contactMessage),
-		subject: 'Re: ',
-		from_email: 'contact@trunk-studio.com',
-		from_name: '',
-		to: [{
-			email: contactEmail,
-			type: 'to'
-		}, {
-			email: 'kyle@trunk-studio.com',
-		    type: 'bcc'
-		}, {
-			email: 'smlsun@trunk-studio.com',
-			type: 'bcc'
-		}]
-	};
+	// var messageConfirmation = {
+	// 	html: util.format(mailConfirmation, contactName, contactSubject, contactMessage),
+	// 	subject: 'Re: ',
+	// 	from_email: 'contact@trunk-studio.com',
+	// 	from_name: '',
+	// 	to: [{
+	// 		email: contactEmail,
+	// 		type: 'to'
+	// 	}, {
+	// 		email: 'kyle@trunk-studio.com',
+	// 	    type: 'bcc'
+	// 	}, {
+	// 		email: 'smlsun@trunk-studio.com',
+	// 		type: 'bcc'
+	// 	}]
+	// };
 
-	console.log('=== message ===', message);
 
-	server.mailer.send(message);
+	server.mailer.send(message).then(function (result) {
+		req.flash('message', '信件已寄出');
+		res.redirect('/');
+
+	});
 /*
 	mandrillClient.messages.send({ 'message': message },
 		function (result) {
