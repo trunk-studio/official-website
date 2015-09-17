@@ -34,7 +34,12 @@ html(lang='zh-Hant-TW')
                 //  i.fa.fa-pinterest
         |         
         nav#navbar.site-navbar.navbar.navbar-static-top(role='navigation')
+          
           .container
+            if message != ''
+              .row.col-sm-12
+                .alert.alert-success(role='alert')
+                  p= message
             .navbar-header
               button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
                 span.sr-only Toggle navigation
