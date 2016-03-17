@@ -1,0 +1,23 @@
+
+#topbar .phone-number {
+  padding-left:10px;
+  letter-spacing:1px;
+  font-size: 13px;
+  font-family: Helvetica;
+}
+
+h2.section-title {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+
+#intro .container .compact {
+  max-width: 720px;
+  margin: auto;
+}
+
+#features h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+}

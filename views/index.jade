@@ -8,8 +8,16 @@ html(lang='zh-Hant-TW')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     |     
     title 創科資訊股份有限公司
-    |     
+
+
+    link(rel="icon", type="image/png", href="images/favicon.png")
+    link(rel="icon", type="image/x-icon", href="images/favicon.ico")
+
     link(href='assets/css/template.css', rel='stylesheet')
+    link(href='assets/css/custom.css', rel='stylesheet')
+    
+    // todo: ico
+
     // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
@@ -22,7 +30,9 @@ html(lang='zh-Hant-TW')
         nav#topbar.site-topbar.visible-lg.visible-md
           .container
             .row
-              .col-sm-6 聯絡電話 (04)2201-9020
+              .col-sm-6
+                i.fa.fa-phone-square
+                span.phone-number TEL (04)2201-9020
               .social-links.col-sm-6
                 a(href='https://www.facebook.com/trunk.studio.tw')
                   i.fa.fa-facebook
@@ -45,7 +55,8 @@ html(lang='zh-Hant-TW')
                 span.sr-only Toggle navigation
                 |                 
                 i.fa.fa-bars
-              img(src='images/logo.png', alt='')
+              h1.navbar-brand
+                img(src='images/logo.png', height=40)
               fa.fa-bars-left
             |             
             #navbar-collapse-1.collapse.navbar-collapse
@@ -60,10 +71,10 @@ html(lang='zh-Hant-TW')
                   a(href='#solutions') 解決方案
                 |                 
                 li
-                  a(href='#testimonials') 學員分享
+                  a(href='#testimonials') 案例分享
                 |                 
                 li
-                  a(href='#blog') 課程報名
+                  a(href='#blog') 課程活動
                 |                 
                 li
                   a(href='#clients') 合作夥伴
@@ -74,33 +85,32 @@ html(lang='zh-Hant-TW')
       main#main.site-main
         section#carousel-1.carousel.slide.section-slide(data-ride='carousel')
           .carousel-inner
-            .item.active(style='background: url(images/banner1.png);')
+            .item.active(style='background: url(images/photo-1.jpg) no-repeat center; background-size: cover;')
               .container
-                img(src='images/banner1-1.png', alt='')
-            .item(style='background: url(images/banner2.png);')
+                img(src='images/typo-1.png', alt='', style='max-width:85%')
+            .item(style='background: url(images/photo-2.jpg) no-repeat center; background-size: cover;')
               .container
-                img(src='images/banner2-1.png', alt='')
-            .item(style='background: url(images/banner3.png);')
-              .container
-                img(src='images/banner3-1.png', alt='')
+                img(src='images/typo-2.png', alt='', style='max-width:85%')
           a.left.carousel-control(href='#carousel-1', data-slide='prev')
             span.fa.fa-chevron-left
-          |           
           a.right.carousel-control(href='#carousel-1', data-slide='next')
             span.fa.fa-chevron-right
         |         
-        section.section.section-center.section-cta
+        section#intro.section.section-cta
           .container
             h2.section-title
-              span 敏捷軟體開發教育訓練
-            p
-            | We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
+              span 關於創科資訊
+            .compact
+              p 創科資訊股份有限公司成立於 2015 年，由一群熱愛軟體設計的青年組成創新研發團隊，是一家年輕充滿活力與豐富創新創意的新創軟體公司。我們擁有專業跨領域的研發團隊以及充滿創造力的設計團隊，不僅以專業技術為導向，完成高品質的軟體專案要求，更兼具創意導向，提供創新多元的數位內容服務。
+              p 我們有多位資深軟體架構師、技術顧問與程式設計師，專注於 Web / App 相關的開發技術，並且不斷跟隨著時代演進更新技術，擅長的程式語言以 Java 與 JavaScript 為主，包括 Node.js 與 Spring Boot 等主流技術均能充分掌握，也有成熟的 ORM 實作搭配 MySQL 或 SQL Server 資料庫優化的實作能力，以及在 Linux 系統與 AWS 雲端平台部署應用系統的多年經驗。
+              p 我們協助客戶評估決策更好的軟體架構與規劃設計，並採用更有效率的方式完成開發實作。我們熟悉並貫徹實踐敏捷軟體開發流程，由經驗豐富的資深架構師與 Scrum Master 帶領，對軟體專案秉持專業負責的精神，加倍重視軟體品質與資訊安全，從自動化建置與測試到實踐測試驅動開發，搭配 Jenkins 與 Docker 提供持續整合與交付，也包括程式碼品質檢核或系統弱點測試。我們深知這些過去容易被忽略的細節，正是影響軟體品質重要的環節，我們相信只有把事情真正做對、做好，才能交付給客戶值得信賴的軟體。              
+              p We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
             .main-action.row
               .col-md-3.col-md-offset-3.col-sm-4.col-sm-offset-2
-                a.smooth-scroll.btn.btn-lg.btn-block.btn-danger(href='#contact')  訂閱課程通知
+                a.smooth-scroll.btn.btn-lg.btn-block.btn-danger(href='#solutions')  解決方案
               |               
               .col-md-3.col-sm-4
-                a.smooth-scroll.btn.btn-lg.btn-block.btn-default(href='#solutions') 學員分享
+                a.smooth-scroll.btn.btn-lg.btn-block.btn-default(href='#testimonials') 案例分享
         |         
         section#features.section.section-center.section-hilite.section-features
           .container
@@ -108,74 +118,26 @@ html(lang='zh-Hant-TW')
               span 服務項目
             |             
             .row
-              .col-md-4.col-sm-6
+              .col-sm-3
                 .icon-wrap
                   img(src='images/icon9.png', alt='')
-                |                 
-                h4 軟體開發
-                |                 
-                p.text-left 創科團隊成員擁有多年軟體開發的經驗，可以為您量身客製化符合您需求的軟體功能，也在網路行銷具有專業的規劃整合能力，如您有任何的 e 化、雲端化、系統整合的需求，我們的專業技術與經營提供您最完整的建議與服務。
-              |               
-              .col-md-4.col-sm-6
-                .icon-wrap
-                  img(src='images/icon4.png', alt='')
-                |                 
-                h4 企業培訓
-                |                 
-                p.text-left
-                  | 依照企業需求量身打造的培訓課程。
-                  br
-                  br
-                  br
-                  br
-              |               
-              .col-md-4.col-sm-6
+                h3 軟體開發
+                p.text-left 由我們專業的軟體研發團隊，協助您完成專案或產品開發。我們擅長的領域包括：數位內容平台、行動電商與物聯網應用，從設計規劃到程式開發都能提供多年經驗。
+              .col-sm-3
                 .icon-wrap
                   img(src='images/icon8.png', alt='')
-                |                 
-                h4 認證輔導
-                |                 
-                p.text-left
-                  | 從做中學獲得實務經驗及專業技能，進而通過認證取得專業能力檢定證照。
-                  br
-                  br
-                  br
-                  br
-              |               
-              .col-md-4.col-sm-6
+                h3 系統整合
+                p.text-left 以創新營運模式提供多元服務之平台，快速整合各種資源，不僅滿足使用者之多樣資訊需求，加速帶動各領域之應用服務發展，共同掌握商機。
+              .col-sm-3
                 .icon-wrap
-                  img(src='images/icon10.png', alt='')
-                |                 
-                h4 獵才服務
-                |                 
-                p.text-left
-                  | 軟體開發人才。
-                  br
-                  br
-                  br
-              .col-md-4.col-sm-6
+                  img(src='images/icon4.png', alt='')
+                h3 企業培訓
+                p.text-left 我們提供自行研發的 AgileWorks 線上教材與平台，全面提升學習效率，課程涵蓋實踐敏捷開發流程所需要具備的知識觀念，以及熱門開發工具的實機操作。
+              .col-sm-3
                 .icon-wrap
-                  img(src='images/icon5.png', alt='')
-                |                 
-                h4 實習計畫
-                |                 
-                p.text-left
-                  | 創科資訊與國內大專院校合作，
-                  | 共同建立推動大學生實習就業平台，
-                  | 遴聘業界專家給予實習生暑期二個月的教育訓練，
-                  | 經考核通過的實習生予以輔導進入職場，
-                  | 正式協助團隊執行專案開發任務，
-                  | 建立畢業生學以致用的職場捷徑。
-              |               
-              .col-md-4.col-sm-6
-                .icon-wrap
-                  img(src='images/icon6.png', alt='')
-                |                 
-                h4 團隊輔導
-                |                 
-                p.text-left
-                  | 協助剛起步的開發團隊加速！
-        |         
+                  img(src='images/icon8.png', alt='')
+                h3 學校課程
+                p.text-left 我們有豐富的業師經驗，並與多所知名大專院校合作，提供基礎程式語言、網頁與手機程式設計教學輔導課程，提供業界最新實務經驗，並輔導學生取得專業認證。
         section#solutions.section.section-portfolio
           .container
             h2.section-title
@@ -661,14 +623,8 @@ html(lang='zh-Hant-TW')
     .scroll-to-top(data-spy='affix', data-offset-top='200')
       a.smooth-scroll(href='#page')
         i.fa.fa-arrow-up
-    |   
-    |     
     script(type='text/javascript', src='https://code.jquery.com/jquery-1.10.2.min.js')
-    |     
     script(type='text/javascript', src='assets/js/bootstrap-3.1.1.min.js')
-    |     
     script(type='text/javascript', src='assets/js/jquery.isotope.min.js?v=1.5.26')
-    |     
     script(type='text/javascript', src='assets/js/jquery.singlePageNav.min.js')
-    |     
     script(type='text/javascript', src='assets/js/main.js')
