@@ -18,10 +18,26 @@ h2.section-title {
 
 #solutions .container .compact {
   max-width: 720px;
-  margin: auto;  
+  margin: auto;
 }
 
 #features h3 {
   font-family: sans-serif;
   font-weight: 700;
+}
+
+#team h5 {
+  color: #555;
+  font-size: 11px;
+  position: relative;
+  top: -10px;
+  text-overflow: ellipsis;
+}
+
+.copyright {
+  border-top: none;
+}
+
+#footer {
+  padding-bottom: 80px;
 }
