@@ -1,0 +1,7 @@
+header h1 {
+  background: url(../img/photo-2.jpg) center no-repeat;
+  background-size: cover;
+
+  font-size: 48px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
