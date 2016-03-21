@@ -148,25 +148,25 @@ html(lang='zh-Hant-TW')
                 .col-xs-4
                   img(src='images/spring-io-logo.png', alt='')
                 .col-xs-8
-                  p.text-left Enterprise Java Web
+                  p.text-left 我們擁有多年的 Java EE 企業級應用開發經驗，近期多採用 Spring Boot 開發後端 API Server，或是以 Grails Framework 實現類似 RoR 思維的 MVC 網站平台開發，也利用 Gradle / Geb 等新一代自動化建置與測試工具。我們也具備整合 Java 與 Node.js / PHP / .NET 等多種開發平台的能力，具備開發中大型企業專案的整合能力。
               hr
               .row
                 .col-xs-4
                   img(src='images/raspberrypi-docker-nodejs.png', alt='')
                 .col-xs-8
-                  p.text-left We build IoT application in Raspberry Pi with Docker and Node.js
+                  p.text-left 迎接 IoT 物聯網應用時代的來臨，我們擁有在 Raspberry Pi 裝置架構 Node.js 應用程式的成功經驗，以及在樹莓派使用 Docker 進行部署。我們的專案利用 GPIO 與硬體端整合，並提供 RESTful API Server 整合 Mobile Web 前端與 Native App 操作介面。
               hr
               .row
                 .col-xs-4
                   img(src='images/jenkins.png', alt='')
                 .col-xs-8
-                  p.text-left Continuous Integration with Jenkins CI
+                  p.text-left 創科資訊的研發團隊採用 Jenkins 為每個軟體專案導入持續整合，從自動化建置測試到 Production Server 部署，我們的資深架構師擁有多年 Jenkins 使用經驗，也協助過許多企業開發團隊導入 Jenkins 持續整合。就像《Iron Man》電影中的 Jarvis，有 Jenkins 這位全年無休的專案管家，讓專案團隊節省許多時間，並且為軟體品質、專案的健康程度嚴格把關，在必要的時候主動將異常事件通知團隊成員，確保敏捷開發的精神在每一天落實，並且讓專案建置流程盡可能自動化且透明。
               hr
               .row
                 .col-xs-4
                   img(src='images/docker.png', alt='')
                 .col-xs-8
-                  p.text-left Infrastructure as Code
+                  p.text-left Docker 是近年快速竄紅的虛擬化容器技術，它的用途比傳統的 Virtual Machine 更為廣泛，不論是搭配 Jenkins 用於持續整合的測試環境，或是用來建構專案所需的開發環境，甚至用在 Production Server 的雲端部署，都因為 Docker 的普及而帶來許多新思維，以及更多元化的應用方式。創科資訊作為一個技術不斷升級的研發團隊，無論是在持續整合流程或雲端伺服器的部署，都正式將 Docker 作為基礎開發環境的一部份，我們確保軟體能夠在 Docker 容器中正確運行，並且在 CI 與 DevOps 階段採用一致且良好的執行環境，如此一來更能快速測試且處理問題，進而確保軟體品質與提高部署的正確性。
               hr
         // Project Modal
         #project-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-modal-label', aria-hidden='true')
@@ -471,20 +471,6 @@ html(lang='zh-Hant-TW')
                     p 內容豐富，很棒!!!上課搭配實作的方式，有很大的幫助。
                     small Jenkins 實戰：中華電信研究院
 
-
-              |               
-              ol.carousel-indicators
-                li.active(data-target='#carousel-example-generic', data-slide-to='0')
-                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
-                |                 
-                li(data-target='#carousel-example-generic', data-slide-to='1')
-                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
-                |                 
-                li(data-target='#carousel-example-generic', data-slide-to='2')
-                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
-        |         
-
-
         section#clients.section.section-our-clients
           .container
             h2.section-title
@@ -512,25 +498,27 @@ html(lang='zh-Hant-TW')
                 img(src='images/chtlab-logo.png', alt='')
               .col-md-2.col-xs-3
                 img(src='images/hkam-logo.png', alt='')
-
+              .col-md-2.col-xs-3
+                img(src='images/pearnature-logo.png', alt='')
             h2.section-title
               span 社群參與
-                .row
-                  .col-xs-2
-                    img(src='images/jsdc-logo.png', alt='')
-                  .col-xs-1
-                    img(src='images/jcconf-logo.png', alt='')
+            .row
+              .col-xs-2
+                img(src='images/jsdc-logo.png', alt='')
+              .col-xs-1
+                img(src='images/jcconf-logo.png', alt='')
             h2.section-title
-              span 產學合作
-                .row
-                  .col-md-2.col-xs-3
-                    img(src='images/csie-csu-logo.jpg', alt='')
-                  .col-md-2.col-xs-3
-                    img(src='images/ltulogo.png', alt='')
-                  .col-md-2.col-xs-3
-                    img(src='images/nutc-logo.png', alt='')
-                  .col-md-2.col-xs-3
-                    img(src='images/yuntechlogo.png', alt='')
+              span 產學與實習合作
+            .row
+              .col-md-2.col-xs-2
+                img(src='images/csu-logo.png', alt='CSU')
+              .col-md-2.col-xs-2
+                img(src='images/ltu-logo.png', alt='LTU')
+              .col-md-2.col-xs-2
+                img(src='images/nutc-logo.png', alt='NUTC')
+              .col-md-2.col-xs-2
+                img(src='images/nyust-logo.png', alt='NYUST')
+            hr
         section#contact.section.section-hilite.section-center.section-contact
           .container
             h2.section-title
