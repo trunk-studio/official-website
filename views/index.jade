@@ -5,6 +5,8 @@ html(lang='zh-Hant-TW')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title 創科資訊股份有限公司
+    meta(name='og:image', content='http://trunk-studio.com/images/photo-1.jpg')
+    meta(name='og:description', content='創科資訊股份有限公司成立於 2015 年，由一群熱愛軟體設計的青年組成創新研發團隊，是一家年輕充滿活力與豐富創新創意的新創軟體公司。我們擁有專業跨領域的研發團隊以及充滿創造力的設計團隊，不僅以專業技術為導向，完成高品質的軟體專案要求，更兼具創意導向，提供創新多元的數位內容服務。')
     link(rel="icon", type="image/png", href="images/favicon.png")
     link(rel="icon", type="image/x-icon", href="images/favicon.ico")
     link(href='assets/css/template.css', rel='stylesheet')
@@ -14,6 +16,15 @@ html(lang='zh-Hant-TW')
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
   body
+    #fb-root
+    script(type="text/javascript").
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     #page
       header#header.site-header
         nav#topbar.site-topbar.visible-lg.visible-md
@@ -94,6 +105,10 @@ html(lang='zh-Hant-TW')
               p 我們有多位資深軟體架構師、技術顧問與程式設計師，專注於 Web / App 相關的開發技術，並且不斷跟隨著時代演進更新技術，擅長的程式語言以 Java 與 JavaScript 為主，包括 Node.js 與 Spring Boot 等主流技術均能充分掌握，也有成熟的 ORM 實作搭配 MySQL 或 SQL Server 資料庫優化的實作能力，以及在 Linux 系統與 AWS 雲端平台部署應用系統的多年經驗。
               p 我們協助客戶評估決策更好的軟體架構與規劃設計，並採用更有效率的方式完成開發實作。我們熟悉並貫徹實踐敏捷軟體開發流程，由經驗豐富的資深架構師與 Scrum Master 帶領，對軟體專案秉持專業負責的精神，加倍重視軟體品質與資訊安全，從自動化建置與測試到實踐測試驅動開發，搭配 Jenkins 與 Docker 提供持續整合與交付，也包括程式碼品質檢核或系統弱點測試。我們深知這些過去容易被忽略的細節，正是影響軟體品質重要的環節，我們相信只有把事情真正做對、做好，才能交付給客戶值得信賴的軟體。              
               p We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
+              
+              .text-center
+                .fb-like(data-href="https://www.facebook.com/trunk.studio.tw/", data-layout="button_count", data-action="like", data-show-faces="false", data-share="true")
+              
             .main-action.row
               .col-md-3.col-md-offset-3.col-sm-4.col-sm-offset-2
                 a.smooth-scroll.btn.btn-lg.btn-block.btn-danger(href='#solutions')  解決方案
@@ -133,39 +148,39 @@ html(lang='zh-Hant-TW')
               h2.section-title
                 span 解決方案
               .row
-                .col-xs-4
+                .col-sm-4
                   img.img-responsive(src='images/aws-consulting-partner.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left 創科資訊是 Amazon Web Services 正式認可的 Consulting Partner，我們擁有多年的雲端部署經驗，可以協助客戶選擇適合需求且節約預算的 AWS 服務組合，例如 EC2、S3、ElastiCache、RDS、Elastic BeansTalk、Route53⋯等，包含自動化部署、高可用性、備援機制與水平擴展，讓您的軟體架構充分發揮 AWS 雲端運算帶來的效益。
               hr
               .row
-                .col-xs-4
+                .col-sm-4
                   img(src='images/nodejs.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left 創科資訊團隊多年的 Node.js 實作經驗，擁有成熟可靠的技術基礎當後盾，我們充分利用 Node.js 帶來的優勢，開發出高效能、穩定可靠且部署成本相對節省的 Web 系統。我們依照專案目的選擇 Sails 或 Koa 作為開發框架，可以搭配 WebSocket 實作更即時的新一代服務，並使用 Sequelize ORM 開發相容不同資料庫平台的後端程式，以及透過 RESTful Web Services 串接整合不同開發平台的服務元件。
               hr
               .row
-                .col-xs-4
+                .col-sm-4
                   img(src='images/spring-io-logo.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left 我們擁有多年的 Java EE 企業級應用開發經驗，近期多採用 Spring Boot 開發後端 API Server，或是以 Grails Framework 實現類似 RoR 思維的 MVC 網站平台開發，也利用 Gradle / Geb 等新一代自動化建置與測試工具。我們也具備整合 Java 與 Node.js / PHP / .NET 等多種開發平台的能力，具備開發中大型企業專案的整合能力。
               hr
               .row
-                .col-xs-4
+                .col-sm-4
                   img(src='images/raspberrypi-docker-nodejs.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left 迎接 IoT 物聯網應用時代的來臨，我們擁有在 Raspberry Pi 裝置架構 Node.js 應用程式的成功經驗，以及在樹莓派使用 Docker 進行部署。我們的專案利用 GPIO 與硬體端整合，並提供 RESTful API Server 整合 Mobile Web 前端與 Native App 操作介面。
               hr
               .row
-                .col-xs-4
+                .col-sm-4
                   img(src='images/jenkins.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left 創科資訊的研發團隊採用 Jenkins 為每個軟體專案導入持續整合，從自動化建置測試到 Production Server 部署，我們的資深架構師擁有多年 Jenkins 使用經驗，也協助過許多企業開發團隊導入 Jenkins 持續整合。就像《Iron Man》電影中的 Jarvis，有 Jenkins 這位全年無休的專案管家，讓專案團隊節省許多時間，並且為軟體品質、專案的健康程度嚴格把關，在必要的時候主動將異常事件通知團隊成員，確保敏捷開發的精神在每一天落實，並且讓專案建置流程盡可能自動化且透明。
               hr
               .row
-                .col-xs-4
+                .col-sm-4
                   img(src='images/docker.png', alt='')
-                .col-xs-8
+                .col-sm-8
                   p.text-left Docker 是近年快速竄紅的虛擬化容器技術，它的用途比傳統的 Virtual Machine 更為廣泛，不論是搭配 Jenkins 用於持續整合的測試環境，或是用來建構專案所需的開發環境，甚至用在 Production Server 的雲端部署，都因為 Docker 的普及而帶來許多新思維，以及更多元化的應用方式。創科資訊作為一個技術不斷升級的研發團隊，無論是在持續整合流程或雲端伺服器的部署，都正式將 Docker 作為基礎開發環境的一部份，我們確保軟體能夠在 Docker 容器中正確運行，並且在 CI 與 DevOps 階段採用一致且良好的執行環境，如此一來更能快速測試且處理問題，進而確保軟體品質與提高部署的正確性。
               hr
       section#casestudy.section.section-casestudy
@@ -173,15 +188,13 @@ html(lang='zh-Hant-TW')
           h2.section-title
             span 精選案例分享
           .row
-            .col-xs-6
+            .col-sm-6(style='padding:1%')
               img.img-thumbnail(src='images/case-1.jpg')
-            .col-xs-6
+            .col-sm-6(style='padding:1%')
               img.img-thumbnail(src='images/case-2.jpg')
-            .col-xs-12
-              hr
-            .col-xs-6
+            .col-sm-6(style='padding:1%')
               img.img-thumbnail(src='images/case-3.jpg')
-            .col-xs-6
+            .col-sm-6(style='padding:1%')
               img.img-thumbnail(src='images/case-4.jpg')
           hr
 
@@ -249,7 +262,7 @@ html(lang='zh-Hant-TW')
             h2.section-title
               span 研發團隊成員
             .row
-              .col-lg-4.hidden-md
+              .col-lg-4.hidden-md.hidden-sm.hidden-xs
                 img.img-thumbnail(src='images/our-team-cover.jpg')
               .col-lg-8.col-md-12
                 .row
