@@ -12,12 +12,7 @@ h2.section-title {
   font-weight: 700;
 }
 
-#intro .container .compact {
-  max-width: 720px;
-  margin: auto;
-}
-
-#solutions .container .compact {
+section .compact {
   max-width: 720px;
   margin: auto;
 }
