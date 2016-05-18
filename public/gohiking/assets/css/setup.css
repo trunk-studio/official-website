@@ -1,0 +1,141 @@
+/**
+ * Setup (for preview only)
+ */
+.setup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 99999;
+  -webkit-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+      transform: translateX(-250px);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.setup:after {
+  position: absolute;
+  content: "";
+  top: 150px;
+  right: -50px;
+  width: 50px;
+  height: 55px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.setup.active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+      transform: translateX(0);
+}
+.setup__trigger {
+  position: absolute;
+  top: 150px;
+  right: -50px;
+  width: 50px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.setup__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 29px 15px;
+  background-color: white;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+.setup__block {
+  margin-bottom: 30px;
+}
+.setup__heading {
+  margin: 0 0 30px 0;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+}
+.setup__img-link {
+  display: block;
+  margin-bottom: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.05);
+  opacity: .8;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+.setup__img-link.active,
+.setup__img-link:hover {
+  opacity: 1;
+}
+.setup__devices {
+  padding-left: 20px;
+}
+.setup__devices label {
+  padding-left: 0;
+  text-transform: none;
+  color: #333;
+}
+.setup__devices label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border: 10px solid #ededed;
+  background-color: #333;
+  border-radius: 50%;
+  vertical-align: middle;
+  -webkit-transition: border-width 100ms linear;
+  transition: border-width 100ms linear;
+}
+.setup__devices input[type="radio"] {
+  display: none;
+}
+.setup__devices input[type="radio"]:checked + label:before {
+  border-width: 7px;
+}
+/* Animation */
+.animateRight {
+  -webkit-animation-name: animateRight;
+  animation-name: animateRight;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@-webkit-keyframes animateRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50px, -50%);
+    transform: translate(-50px, -50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+@keyframes animateRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50px, -50%);
+    transform: translate(-50px, -50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
