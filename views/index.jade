@@ -37,6 +37,10 @@ html(lang='zh-Hant-TW')
                 i.fa.fa-phone-square
                 span.phone-number TEL (04)2201-9020
               .social-links.col-sm-6
+                a(href='https://www.youtube.com/channel/UCYPmMEy6bvxThP5Mvb2nczA')
+                  i.fa.fa-youtube
+                a(href='https://www.linkedin.com/company/trunk-studio/')
+                  i.fa.fa-linkedin-square
                 a(href='https://www.facebook.com/trunk.studio.tw')
                   i.fa.fa-facebook
                 //a(href='#')
@@ -45,9 +49,6 @@ html(lang='zh-Hant-TW')
                   i.fa.fa-google-plus
                 //a(href='#')
                 //  i.fa.fa-pinterest
-                a(href='http://trunk-studio.com/blog/')
-                  i.fa.fa-link
-                  span &nbsp;部落格
 
         nav#navbar.site-navbar.navbar.navbar-static-top(role='navigation')
 
@@ -110,7 +111,7 @@ html(lang='zh-Hant-TW')
               p 創科資訊股份有限公司成立於 2015 年，由一群熱愛軟體設計的青年組成創新研發團隊，是一家年輕充滿活力與豐富創新創意的新創軟體公司。我們擁有專業跨領域的研發團隊以及充滿創造力的設計團隊，不僅以專業技術為導向，完成高品質的軟體專案要求，更兼具創意導向，提供創新多元的數位內容服務。
               p 我們有多位資深軟體架構師、技術顧問與程式設計師，專注於 Web / App 相關的開發技術，並且不斷跟隨著時代演進更新技術，擅長的程式語言以 Java 與 JavaScript 為主，包括 Node.js 與 Spring Boot 等主流技術均能充分掌握，也有成熟的 ORM 實作搭配 MySQL 或 SQL Server 資料庫優化的實作能力，以及在 Linux 系統與 AWS 雲端平台部署應用系統的多年經驗。
               p 我們協助客戶評估決策更好的軟體架構與規劃設計，並採用更有效率的方式完成開發實作。我們熟悉並貫徹實踐敏捷軟體開發流程，由經驗豐富的資深架構師與 Scrum Master 帶領，對軟體專案秉持專業負責的精神，加倍重視軟體品質與資訊安全，從自動化建置與測試到實踐測試驅動開發，搭配 Jenkins 與 Docker 提供持續整合與交付，也包括程式碼品質檢核或系統弱點測試。我們深知這些過去容易被忽略的細節，正是影響軟體品質重要的環節，我們相信只有把事情真正做對、做好，才能交付給客戶值得信賴的軟體。
-              p We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
+              //- p We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
 
               .text-center
                 .fb-like(data-href="https://www.facebook.com/trunk.studio.tw/", data-layout="button_count", data-action="like", data-show-faces="false", data-share="true")
@@ -159,7 +160,7 @@ html(lang='zh-Hant-TW')
                 .col-sm-3.text-left
                   p 現場設備：
                   ul
-                    li 80吋投影機
+                    li 80吋投影幕
                     li 55吋大尺寸電視
                     li 白板
                     li WiFi 無線網路
@@ -187,6 +188,12 @@ html(lang='zh-Hant-TW')
                   img(src='images/nodejs.png', alt='')
                 .col-sm-8
                   p.text-left 創科資訊團隊多年的 Node.js 實作經驗，擁有成熟可靠的技術基礎當後盾，我們充分利用 Node.js 帶來的優勢，開發出高效能、穩定可靠且部署成本相對節省的 Web 系統。我們依照專案目的選擇 Sails 或 Koa 作為開發框架，可以搭配 WebSocket 實作更即時的新一代服務，並使用 Sequelize ORM 開發相容不同資料庫平台的後端程式，以及透過 RESTful Web Services 串接整合不同開發平台的服務元件。
+              hr
+              .row
+                .col-sm-4
+                  img(src='images/react-native.jpeg', alt='')
+                .col-sm-8
+                  p.text-left React Native 結合了 Web 應用和 Native 應用的優勢，可以使用 JavaScript 來開發 iOS 和 Android 原生應用。在 JavaScript 中用 React 抽像操作系統原生的 UI 組件，代替 DOM 元素來渲染等。使你能夠使用基於 JavaScript 和 React 一致的開發體驗在本地平台上構建世界一流的應用程序體驗。
               hr
               .row
                 .col-sm-4
@@ -296,20 +303,34 @@ html(lang='zh-Hant-TW')
               .col-lg-8.col-md-12
                 .row
                   .col-md-2.col-sm-4.col-xs-4
-                    img.img-circle(src='images/portrait-smlsun.jpg')
-                    h5 架構師 - 謝宗穎<br/>（Spooky）
+                    a(href="https://tw.linkedin.com/in/hsieh-tsung-ying-0957375b ", target="_blank")
+                      img.img-circle(src='images/portrait-smlsun.jpg')
+                      h5 架構師 - 謝宗穎<br/>（Spooky）
                   .col-md-2.col-sm-4.col-xs-4
-                    img.img-circle(src='images/portrait-lyhcode.jpg')
-                    h5 架構師 - 林彥宏<br/>（Kyle）
+                    a(href="https://about.me/lyhcode", target="_blank")
+                      img.img-circle(src='images/portrait-lyhcode.jpg')
+                      h5 架構師 - 林彥宏<br/>（Kyle）
                   .col-md-2.col-sm-4.col-xs-4
                     img.img-circle(src='images/portrait-caesar.jpg')
                     h5 顧問 - 戚務漢<br/>（Caesar）
                   .col-md-2.col-sm-4.col-xs-4
                     img.img-circle(src='images/portrait-kalvar.jpg')
-                    h5 顧問 - 林國銘<br/>（Kalvar）
+                    h5 顧問 - 林國銘<br/>（Kalvar）  
                   .col-md-2.col-sm-4.col-xs-4
-                    img.img-circle(src='images/portrait-kueiyen.jpg')
-                    h5 工程師 - 陳奎研<br/>（Kent）
+                    a(href="https://www.linkedin.com/in/frankie-chien-796b6182", target="_blank")
+                      img.img-circle(src='images/portrait-Frankie.jpg')
+                      h5 顧問 - 錢逢鳴<br/>（Frankie）
+                  .col-md-2.col-sm-4.col-xs-4
+                    a(href="http://rabbittin.wix.com/bonnie-tseng", target="_blank")
+                      img.img-circle(src='images/portrait-Bonnie.png')
+                      h5 顧問 - 曾莉婷<br/>（Bonnie）
+                  .col-md-2.col-sm-4.col-xs-4
+                    img.img-circle(src='images/portrait-Ryan.png')
+                    h5 顧問 - Ryanne Sugue<br/>（Ryan）
+                  .col-md-2.col-sm-4.col-xs-4
+                    a(href="https://about.me/kent.chen", target="_blank")
+                      img.img-circle(src='images/portrait-kueiyen.jpg')
+                      h5 工程師 - 陳奎研<br/>（Kent）
                   .col-md-2.col-sm-4.col-xs-4
                     img.img-circle(src='images/portrait-fuyaode.jpg')
                     h5 工程師 - 傅耀德<br/>（Dan）
@@ -317,11 +338,14 @@ html(lang='zh-Hant-TW')
                     img.img-circle(src='images/portrait-william.jpg')
                     h5 工程師 - 鄭煒霖<br/>（William）
                   .col-md-2.col-sm-4.col-xs-4
-                    img.img-circle(src='images/portrait-dmoon.jpg')
-                    h5 工程師 - 黃駿朋<br/>（Dmoon）
+                    a(href="https://about.me/dmoon.t", target="_blank")
+                      img.img-circle(src='images/portrait-dmoon.jpg')
+                      h5 工程師 - 黃駿朋<br/>（DMoon）
                   .col-md-2.col-sm-4.col-xs-4
-                    img.img-circle(src='images/portrait-yin.png')
-                    h5 工程師 - 黃胤翔<br/>（Yin）
+                    a(href="https://about.me/b2765270", target="_blank")
+                      img.img-circle(src='images/portrait-yin.png')
+                      h5 工程師 - 黃胤翔<br/>（Yin）
+                .row
                   .col-md-2.col-sm-4.col-xs-4
                     img.img-circle(src='images/portrait-nana.jpg')
                     h5 設計師 - 張珮茹<br/>（Nana）
@@ -385,6 +409,106 @@ html(lang='zh-Hant-TW')
                         p 持續整合是讓系統開發在快速變動的需求下，仍能維持高軟體品質的重要關鍵，而 Jenkins 便是實現 CI 的首選工具，透過此自動化的軟體建置工具讓企業能快速驗證軟體版本演進的缺失，更能方便地整合現有各種原始碼管理方案以及各種軟體建置方法。
                         a.more(href='#')
                           span.btn.btn-default 尚未開放
+
+            .row
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/swift-square.png', alt='')
+                          
+                        span.overlay
+                          i.fa.fa-plus
+                            
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='http://firstiosapp.strikingly.com/') 第一次手做 iOS App
+                        .entry-meta
+                           By
+                          a(href='http://firstiosapp.strikingly.com/', target="_blank") 講師：彼得潘
+                          
+                      .entry-content
+                        p 每個人都有著創作App的天份，是時候將它開啟了! 屬於你們的手做iOS App課程，教你親手打造自己喜歡想用的App(比方心愛寵物的App，記錄甜蜜戀情的App)，安裝在自己或家人朋友的iPhone上，隨時打開享用。
+                        a.more(href='http://firstiosapp.strikingly.com/')
+                          span.btn.btn-default 開放報名
+                          
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/raspberry-pi-square.png', alt='')
+
+                        span.overlay
+                          i.fa.fa-plus
+
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='#') Raspberry Pi 樹莓派應用開發基礎
+                        .entry-meta
+                            By
+                          a(href='#', target="_blank") 講師：創科資訊團隊
+
+                      .entry-content
+                        p 想玩樹莓派但是不知從何開始？想用開源硬體做出好玩的東西、玩具？想踏入智慧硬體、物聯網的領域？這個實作課為你而開。
+                        a.more(href='#')
+                          span.btn.btn-default 接受預約
+
+            .row
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/react-square.png', alt='')
+                                        
+                        span.overlay
+                          i.fa.fa-plus
+                                          
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='#') React JS 入門實作基礎培訓
+                        .entry-meta
+                            By
+                          a(href='#', target="_blank") 講師：創科資訊團隊
+                                        
+                      .entry-content
+                        p React 是當前矽谷最受歡迎的 Single Page App 開發技術，它一舉解決數十年來傳統 MVC 開發概念的迷思，不但能降低大型網頁程式的複雜度與大幅改善頁面運行速度，更能快速提升團隊開發效率，是公認最友善、易學又威力強大的開發工具。
+                        p 本課程特別針對完全無 React 基礎的初學者所設計，以深入淺出的方式教授正確觀念與開發手法，讓初心者一次就學會並能立即用於實戰！
+                        a.more(href='#')
+                          span.btn.btn-default 接受預約
+                                        
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/react-square.png', alt='')
+
+                        span.overlay
+                          i.fa.fa-plus
+
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='#') React Native 跨平台 App 程式開發基礎
+                        .entry-meta
+                            By
+                          a(href='#', target="_blank") 講師：創科資訊團隊
+
+                      .entry-content
+                        p React Native的設計理念： 既擁有Native的用戶體驗、又保留React的開發效率。這個理念似乎迎合了業界普片存在的痛點，這套教程就從基礎出發講述了react native的基礎概念。學些react native將會是未來的移動開發的主流。
+                        a.more(href='#')
+                          span.btn.btn-default 接受預約
+                        a.more(href='https://www.facebook.com/groups/1084440818288147/?fref=ts')
+                          span.btn.btn-info FB社團
+                        a.more(href='https://softnshare.wordpress.com/slack/reactnative/')
+                          span.btn.btn-primary Slack 討論群組
+
         section#testimonials.section.section-center.section-hilite.section-testimonial
           .container
             h2.section-title
@@ -556,16 +680,30 @@ html(lang='zh-Hant-TW')
       footer#footer.site-footer
         .container
           .row
-            .col-sm-6
+            .col-sm-4
               ul
                 li Tel: (04)2201-9020
                 li E-mail: kyle@trunk-studio.com
-            .col-sm-6
+            .col-sm-4
               ul
                 li Copyright &copy; 2015 Trunk Studio. All Rights Reserved.
                 li
                   a(href='http://trunk-studio.com') 創科資訊股份有限公司
                    版權所有
+            .col-sm-4
+              ul
+                a(href='http://trunk-studio.com/blog/')
+                  i.fa.fa-link
+                  span &nbsp;部落格
+              ul
+                a(href='http://resource.trunk-studio.com/')
+                  span &nbsp;設計資源
+              ul
+                a(href='https://trunkstudio.gitbooks.io/intern/content/')
+                  span &nbsp;Gitbook
+              ul  
+                a(href='https://trunkstudio.hackpad.com/')
+                  span &nbsp;Hackpad
     .scroll-to-top(data-spy='affix', data-offset-top='200')
       a.smooth-scroll(href='#page')
         i.fa.fa-arrow-up
