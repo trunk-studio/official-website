@@ -1083,7 +1083,7 @@ html {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -4500,11 +4500,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #333;
+  color: #111;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #333;
+  color: #111;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -7030,7 +7030,7 @@ section [data-animate-in] {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 15px 30px;
+  padding: 10px 15px;
 }
 /* Mobile look */
 @media (max-width: 767px) {
@@ -7447,10 +7447,10 @@ section {
   width: 14px;
   height: 14px;
   line-height: 14px;
-  color: #333;
+  color: #557c1a;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #333;
+  border: 2px solid #557c1a;
   border-radius: 50%;
   opacity: .2;
   -webkit-transition: all .3s cubic-bezier(.39, .575, .565, 1);
@@ -7547,7 +7547,7 @@ section {
   position: relative;
   margin-top: 0;
   margin-bottom: 22px;
-  font-size: 36px;
+  font-size: 40px;
 }
 @media (max-width: 767px) {
   .heading {
@@ -7601,7 +7601,7 @@ p {
   color: #333;
 }
 .list-ticked > li > .fa {
-  background-color: #4398b5;
+  background-color: #709D2A;
 }
 /**
  * Colors
@@ -7624,10 +7624,10 @@ p {
  */
 .btn-primary,
 .navbar-btn {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, .9);
-  background-color: #4398b5;
+  background-color: #709d2a;
   border: 1px solid transparent;
   border-radius: 2px;
   -webkit-transition: all .1s linear;
@@ -7643,7 +7643,7 @@ p {
 .btn-primary:hover,
 .navbar-btn:hover {
   color: white;
-  background-color: #3c88a2;
+  background-color: #677c46;
   border-color: transparent;
 }
 .btn-primary:focus,
@@ -7696,13 +7696,13 @@ p {
  */
 .carousel-indicators > li {
   background-color: transparent;
-  border: 1px solid #4398b5;
+  border: 1px solid #44660e;
 }
 .carousel-indicators > li.active {
-  background-color: #4398b5;
+  background-color: #44660e;
 }
 /**
- * Forms 
+ * Forms
  */
 form .form-control {
   background-color: white;
@@ -7730,7 +7730,7 @@ section {
  * Background image
  */
 .bg-image {
-  background-image: url("../img/bg_2.jpg");
+  background-image: url("../img/bg_6.jpg");
 }
 .bg-image:before {
   background-color: #fff;
