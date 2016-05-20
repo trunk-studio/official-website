@@ -7682,14 +7682,14 @@ p {
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
   color: white;
-  background-color: #3c88a2;
+  background-color: #44660e;
   border-right: 1px solid rgba(0, 0, 0, .08);
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: white;
-  background-color: #3c88a2;
+  background-color: #44660e;
   border-right: 1px solid rgba(0, 0, 0, .08);
 }
 /**
@@ -7721,11 +7721,11 @@ section {
 }
 ::-moz-selection {
   color: white;
-  background-color: #4398b5;
+  background-color: #789c41;
 }
 ::selection {
   color: white;
-  background-color: #4398b5;
+  background-color: #789c41;
 }
 /**
  * Background image
@@ -7741,4 +7741,7 @@ section {
 
 .download_link:hover {
   text-decoration: none;
+}
+#download_btn:active, #download_btn:visited {
+  background-color: #789c41 !important;
 }
