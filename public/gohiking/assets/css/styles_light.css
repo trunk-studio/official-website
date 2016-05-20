@@ -7506,9 +7506,9 @@ section {
 }
 .social-links > ul > li > a {
   display: block;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 60px;
+  height: 60px;
+  line-height: 22px;
   color: #333;
   text-align: center;
   cursor: pointer;
@@ -7522,6 +7522,7 @@ section {
           transform: translateZ(0);
 }
 .social-links > ul > li > a:hover {
+  text-decoration: none;
   opacity: 1;
 }
 @media (min-width: 992px) {
@@ -7681,14 +7682,14 @@ p {
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
   color: white;
-  background-color: #3c88a2;
+  background-color: #44660e;
   border-right: 1px solid rgba(0, 0, 0, .08);
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: white;
-  background-color: #3c88a2;
+  background-color: #44660e;
   border-right: 1px solid rgba(0, 0, 0, .08);
 }
 /**
@@ -7720,20 +7721,27 @@ section {
 }
 ::-moz-selection {
   color: white;
-  background-color: #4398b5;
+  background-color: #789c41;
 }
 ::selection {
   color: white;
-  background-color: #4398b5;
+  background-color: #789c41;
 }
 /**
  * Background image
  */
 .bg-image {
-  background-image: url("../img/bg_6.jpg");
+  background-image: url("../img/bg_7.jpg");
 }
 .bg-image:before {
   background-color: #fff;
   opacity: .5;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.download_link:hover {
+  text-decoration: none;
+}
+#download_btn:active, #download_btn:visited {
+  background-color: #789c41 !important;
+}
