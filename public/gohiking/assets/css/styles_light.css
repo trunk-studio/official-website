@@ -7506,9 +7506,9 @@ section {
 }
 .social-links > ul > li > a {
   display: block;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 60px;
+  height: 60px;
+  line-height: 22px;
   color: #333;
   text-align: center;
   cursor: pointer;
@@ -7522,6 +7522,7 @@ section {
           transform: translateZ(0);
 }
 .social-links > ul > li > a:hover {
+  text-decoration: none;
   opacity: 1;
 }
 @media (min-width: 992px) {
