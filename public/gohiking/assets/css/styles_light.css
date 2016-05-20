@@ -7737,3 +7737,7 @@ section {
   opacity: .5;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.download_link:hover {
+  text-decoration: none;
+}
