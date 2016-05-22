@@ -7509,12 +7509,12 @@ section {
   width: 60px;
   height: 60px;
   line-height: 22px;
-  color: #333;
+  color: #444;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #333;
+  border: 1px solid #444;
   border-radius: 50%;
-  opacity: .4;
+  opacity: 1;
   -webkit-transition: all .3s cubic-bezier(.39, .575, .565, 1);
        -o-transition: all .3s cubic-bezier(.39, .575, .565, 1);
           transition: all .3s cubic-bezier(.39, .575, .565, 1);
@@ -7523,7 +7523,8 @@ section {
 }
 .social-links > ul > li > a:hover {
   text-decoration: none;
-  opacity: 1;
+  border: 1px solid #000;
+  color: #000;
 }
 @media (min-width: 992px) {
   .social-links {
@@ -7717,7 +7718,8 @@ form .form-control:focus {
  * General
  */
 section {
-  text-shadow: none;
+  /*text-shadow: none;*/
+  text-shadow: 0 0 3px #FFF;
 }
 ::-moz-selection {
   color: white;
@@ -7731,7 +7733,7 @@ section {
  * Background image
  */
 .bg-image {
-  background-image: url("../img/bg_7.jpg");
+  background-image: url("../img/bg_5.jpg");
 }
 .bg-image:before {
   background-color: #fff;
