@@ -5,10 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script>
+  var userAgent = navigator.userAgent;
+  console.log(userAgent);
+  if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
+  } else {
+    document.location.href = "../"
+  }
+</script>
+<script id="fb-root" type="text/javascript">
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/styles.css?v=1.6" rel="stylesheet">
+<link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.feature-blocks {
+  padding: 0 8% 1em 8%;
+  color: #FFF;
+  margin-top: -7em;
+  background-color: #5AA454;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+.feature-blocks h5 {
+  font-size: 13pt;
+  margin: 1em 0 0.5em 0;
+  font-weight: 500;
+  color: #FFF;
+}
+.feature-blocks p {
+  font-size: 11pt;
+  margin: 0;
+  line-height: 1.7em;
+  color: #EFEFEF;
+  font-weight: 400;
+}
+.container p {
+  text-align: justify;
+}
+</style>
 <!-- js -->
 <script src="js/jquery.min.js"></script>
 <script src="js/scripts.js?v=1.7"></script>
@@ -35,8 +80,8 @@
 						  <nav class="pull">
 							<ul class="nav">
 							  <li><a href="#home" class="scroll">首頁</a></li>
-                <li><a href="#features" class="scroll">主要特色</a></li>
-							  <li><a href="#services" class="scroll">功能介紹</a></li>
+                <li><a href="#services" class="scroll">主要特色</a></li>
+							  <li><a href="#features" class="scroll">功能介紹</a></li>
 							  <li><a href="#contact" class="scroll">聯絡我們</a></li>
 							</ul>
 						  </nav>
@@ -49,8 +94,8 @@
 							<a href="./"><img style="max-width:130px" src="../assets/img/LOGO.png"></a>
 						</div>
 						<div class="top-nav">
-							<section class="hero fa-navicon fa-2x nav_slide_button" id="hero">
-								<a href="#"><img src="images/menu-icon.png" alt=""></a>
+							<section class="hero fa-2x nav_slide_button" id="hero">
+								<a href="#"><i class="fa fa-bars" style="color:#709D2A;font-size:1em;"></i></a>
 							</section>
 						</div>
 						<div class="clearfix"></div>
@@ -60,72 +105,26 @@
 				<!-- container -->
 				<div class="container">
 					<div class="col-md-5 slid">
-						<!--- banner Slider starts Here --->
-							<script src="js/responsiveslides.min.js"></script>
-						 <script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							  // Slideshow 4
-							  $("#slider1").responsiveSlides({
-								auto: true,
-								pager: true,
-								nav: true,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-								  $('.events').append("<li>before event fired.</li>");
-								},
-								after: function () {
-								  $('.events').append("<li>after event fired.</li>");
-								}
-							  });
-
-							});
-						  </script>
-						<!----//End-slider-script---->
-						<div id="top" class="callbacks_container">
-							<ul class="rslides" id="slider1">
-								<li>
-									<div class="mobile-device">
-										<img src="../assets/img/app-screenshots/gohiking_1.png" alt="" />
-									</div>
-								</li>
-								<li>
-									<div class="mobile-device">
-										<img src="../assets/img/app-screenshots/gohiking_2.png" alt="" />
-									</div>
-								</li>
-								<li>
-									<div class="mobile-device">
-										<img src="../assets/img/app-screenshots/gohiking_3.png" alt="" />
-									</div>
-								</li>
-                <li>
-									<div class="mobile-device">
-										<img src="../assets/img/app-screenshots/gohiking_4.png" alt="" />
-									</div>
-								</li>
-                <li>
-									<div class="mobile-device">
-										<img src="../assets/img/app-screenshots/gohiking_5.png" alt="" />
-									</div>
-								</li>
-							</ul>
-						</div>
+						<h2 style="font-size:3em;margin-bottom:4em;font-weight:600;color:#403f3f;">
+              <span style="font-size:0.7em">好想一起</span><br/>去爬山啊。
+            </h2>
+            <h3 style="font-size:1.2em;color:#FFF;font-weight:400;text-shadow:1px 1px 1px #000;line-height:1.5em;">
+              首款為登山健行愛好者，<br/>量身打造的 App
+            </h3>
 					</div>
 					<div class="col-md-7 banner-info-left">
-						<div class="banner-buttons">
-							<div class="banner-button">
+						<div class="banner-buttons" style="margin-top:1em;">
+							<div class="banner-button" style="margin-left:8%;text-align:center;">
                 <a href="https://itunes.apple.com/us/app/tai-wan-bu-dao1zhi-tong/id1113267807?l=zh&ls=1&mt=8" class="delay_2 download_link" data-animate-in="animateUpDown">
                   <img src="../assets/img/app_ios_store.png">
                 </a>
 							</div>
-							<div class="banner-button banner-button-2 green-button">
+							<div class="banner-button green-button" style="text-align:center;">
                 <a href="https://play.google.com/store/apps/details?id=com.trunksys.gohiking" class="delay_2 download_link" data-animate-in="animateUpDown">
                   <img src="../assets/img/app_play_store.png">
                 </a>
 							</div>
-							<div class="clearfix"></div>
+							<div class="clearfix" style="margin-bottom:-1em;"></div>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -133,34 +132,42 @@
 				<!-- //container -->
 			</div>
 		</div>
+    <h5 style="color:#e2e2e2;line-height:1.5em;margin:-3.5em 0 0 0;padding:0 1em;text-align:center;font-weight:300;font-size:7pt">
+      <span>資料來源</span>
+      <br/>
+      <span style="margin:0 1px">林務局</span> |
+      <span style="margin:0 1px">台灣山林悠遊網</span> |
+      <span style="margin:0 1px">健行筆記</span> |
+      <span style="margin:0 1px">登山補給站</span>
+    </h5>
 		<!-- //header -->
 
     <!-- Service -->
     <div id="services" class="banner-bottom">
       <!-- container -->
-      <div class="container">
+      <div class="container" style="margin-top:10px">
         <div class="banner-text" style="margin-top:1em;">
-          <h3>全新體驗，再攀巔峰</h3>
+          <h3 style="color:#709D2A;">全新體驗，再攀巔峰</h3>
           <p>你渴望挑戰的心情我們都聽到了，「台灣步道一指通」能夠瞬間為你找到周遭適合的步道，天涯海角，盡在一指！</p>
         </div>
         <div class="banner-bottom-grids">
           <div class="col-md-4 banner-bottom-grid">
             <div class="services-icon">
-              <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-th-large fa fa-map-signs" style="font-size:3em" aria-hidden="true"></span>
             </div>
             <h4>輕鬆檢索全國步道</h4>
             <p>從上百條步道中找到理想的步道，竟然也能如此簡單！</p>
           </div>
           <div class="col-md-4 banner-bottom-grid red">
             <div class="services-icon">
-              <span class="glyphicon glyphicon-th-large glyphicon-phone" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-th-large fa fa-tree" style="font-size:3.3em;" aria-hidden="true"></span>
             </div>
             <h4>探索附近最棒的步道</h4>
             <p>假日想出外去走走，卻又不想跑太遠嗎？相信我，步道一指通絕對能滿足你的需求！</p>
           </div>
           <div class="col-md-4 banner-bottom-grid green">
             <div class="services-icon">
-              <span class="glyphicon glyphicon-th-large glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-th-large fa fa-heart" style="font-size:3em" aria-hidden="true"></span>
             </div>
             <h4>分享你喜愛的步道</h4>
             <p>還記得上次美不勝收的風景嗎？美麗的回憶值得一再回味，更值得與好友分享。</p>
@@ -172,137 +179,66 @@
     </div>
     <!-- //Service -->
 
-    <div id="features" class="about" style="padding:1.5em 0">
-			<div class="container">
-				<div class="features-grids">
-					<div class="col-md-7 features-right" style="margin-top:0;">
-            <h4 style="text-align:center;color:#5b5757">步道一指通<span style="font-size:30pt;margin:0 10px;">3</span>大功能</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- features -->
-		<div class="features" style="padding-top:5px !important;padding-bottom:40px !important;">
+		<div id="features" class="features" style="padding-top:5px !important;padding-bottom:0px !important;">
 			<!-- container -->
 			<div class="container">
 				<div class="features-grids">
-					<div class="col-md-7 features-right" style="margin-top:0 !important;">
-						<div class="features-right-grids">
-							<div class="features-right-grid right-top">
-                <div class="col-md-5 slid">
-                    <!--- banner Slider starts Here --->
-                     <script>
-                      // You can also use "$(window).load(function() {"
-                      $(function () {
-                        // Slideshow 4
-                        $("#slider2").responsiveSlides({
-                        auto: true,
-                        pager: true,
-                        nav: true,
-                        speed: 500,
-                        namespace: "callbacks",
-                        before: function () {
-                          $('.events').append("<li>before event fired.</li>");
-                        },
-                        after: function () {
-                          $('.events').append("<li>after event fired.</li>");
-                        }
-                        });
-                      });
-                      </script>
-                    <!----//End-slider-script---->
-                    <div id="top" class="callbacks_container">
-                      <ul class="rslides" id="slider2">
-                        <li>
-                          <div class="mobile-device features-device">
-                            <img src="../assets/img/app-screenshots/gohiking_3.png" alt="" />
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+          <div class="banner-text" style="margin-top:1em;">
+            <h3 style="color:#709D2A;">簡單實用，立即上手</h3>
+            <p>我們列出每條步道的特性、路線圖、難易程度、開放狀況等，你不需要網路、也不必導航。你就是自己最佳的方向指引！</p>
+          </div>
+					<div style="margin-top:0 !important;">
+            <div class="slid">
+                <div id="top" class="callbacks_container">
+                  <ul class="rslides" id="slider2">
+                    <li>
+                      <div class="mobile-device features-device">
+                        <img src="./images/screenshot-1.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="clearfix"></div>
-  							<h5 style="text-align:center;">步道檢索</h5>
-								<p>任何人都能輕鬆快速地找到適合自己的步道，只需要點選欲尋找的區域和類型，我們能立即篩選出最適合你的步道。想要尋找中部的郊山嗎？沒問題！步道一指通讓你上山無懼、下山寫意！</p>
-							</div>
-							<div class="features-right-grid right-middle-top">
-                <div class="col-md-5 slid">
-      							<!--- banner Slider starts Here --->
-      							 <script>
-      								// You can also use "$(window).load(function() {"
-      								$(function () {
-      								  // Slideshow 4
-      								  $("#slider3").responsiveSlides({
-      									auto: true,
-      									pager: true,
-      									nav: true,
-      									speed: 500,
-      									namespace: "callbacks",
-      									before: function () {
-      									  $('.events').append("<li>before event fired.</li>");
-      									},
-      									after: function () {
-      									  $('.events').append("<li>after event fired.</li>");
-      									}
-      								  });
-      								});
-      							  </script>
-      							<!----//End-slider-script---->
-      							<div id="top" class="callbacks_container">
-      								<ul class="rslides" id="slider3">
-      									<li>
-      										<div class="mobile-device features-device">
-      											<img src="images/mobile.png" alt="" />
-      										</div>
-      									</li>
-      								</ul>
-      							</div>
-      					</div>
-                <div class="clearfix"></div>
-                <h5 style="text-align:center;">附近探索</h5>
-                <p>我們透過精準的 GPS 定位，讓使用者在家就可規劃行車路線，最完整豐富的步道資訊盡收在你眼前！</p>
-							</div>
-							<div class="features-right-grid right-middle">
-      					<div class="col-md-5 slid">
-      							<!--- banner Slider starts Here --->
-      							 <script>
-      								// You can also use "$(window).load(function() {"
-      								$(function () {
-      								  // Slideshow 4
-      								  $("#slider4").responsiveSlides({
-      									auto: true,
-      									pager: true,
-      									nav: true,
-      									speed: 500,
-      									namespace: "callbacks",
-      									before: function () {
-      									  $('.events').append("<li>before event fired.</li>");
-      									},
-      									after: function () {
-      									  $('.events').append("<li>after event fired.</li>");
-      									}
-      								  });
-      								});
-      							  </script>
-      							<!----//End-slider-script---->
-      							<div id="top" class="callbacks_container">
-      								<ul class="rslides" id="slider4">
-      									<li>
-      										<div class="mobile-device features-device">
-      											<img src="images/mobile.png" alt="" />
-      										</div>
-      									</li>
-      								</ul>
-      							</div>
-      					</div>
-                <div class="clearfix"></div>
-                <h5 style="text-align:center;">分享步道</h5>
-                <p>在台灣步道一指通，任何人都可以收藏自己喜愛的步道，分享台灣最美的山林景觀！</p>
-							</div>
-						</div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="feature-blocks">
+              <h5>步道檢索</h5>
+              <p>任何人都能輕鬆快速地找到適合自己的步道，只需要點選欲尋找的區域和類型，我們能立即篩選出最適合你的步道。想要尋找中部的郊山嗎？沒問題！步道一指通讓你上山無懼、下山寫意！</p>
+            </div>
+            <div class="slid" style="margin-top:9em !important;">
+                <div id="top" class="callbacks_container">
+                  <ul class="rslides" id="slider3">
+                    <li>
+                      <div class="mobile-device features-device">
+                        <img src="./images/screenshot-2.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="feature-blocks">
+              <h5>附近探索</h5>
+              <p>我們透過精準的 GPS 定位，讓使用者在家就可規劃行車路線，最完整豐富的步道資訊盡收在你眼前！</p>
+            </div>
+            <div class="slid" style="margin-top:6em !important;">
+                <div id="top" class="callbacks_container">
+                  <ul class="rslides" id="slider4">
+                    <li>
+                      <div class="mobile-device features-device">
+                        <img src="./images/screenshot-3.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="feature-blocks">
+              <h5>分享步道</h5>
+              <p>在「台灣步道一指通」，任何人都可以收藏自己喜愛的步道，分享台灣最美的山林景觀！</p>
+            </div>
 					</div>
-					<div class="clearfix"></div>
+					<div class="clearfix" style="margin-bottom:5em;"></div>
 				</div>
 			</div>
 			<!-- //container -->
@@ -310,17 +246,32 @@
 		<!-- //features -->
 
     <!-- footer -->
-		<div id="contact" class="footer">
+		<div id="contact" class="footer" style="padding-top:0;margin-top:-3em;">
 			<!-- container -->
 			<div class="container">
 				<div class="footer-info">
-          <h3 style="font-size:22pt;font-weight:400;color:#EFEFEF">聯絡我們</h3>
-					<img style="margin-bottom: 2em" src="images/8.png" alt="" />
-					<p style="margin-bottom:10px;">office@trunk.studio</p>
-          <p>(04) 2201-9020</p>
+          <div class="banner-buttons" style="margin-top:1em;">
+            <div class="banner-button" style="margin-left:8%;text-align:center;">
+              <a href="https://itunes.apple.com/us/app/tai-wan-bu-dao1zhi-tong/id1113267807?l=zh&ls=1&mt=8" class="delay_2 download_link" data-animate-in="animateUpDown">
+                <img src="../assets/img/app_ios_store.png">
+              </a>
+            </div>
+            <div class="banner-button green-button" style="text-align:center;">
+              <a href="https://play.google.com/store/apps/details?id=com.trunksys.gohiking" class="delay_2 download_link" data-animate-in="animateUpDown">
+                <img src="../assets/img/app_play_store.png">
+              </a>
+            </div>
+            <div class="clearfix" style="margin-bottom:2em;"></div>
+          </div>
+          <div class="banner-text" style="margin-top:1em;">
+            <h3 style="color:#709D2A;">聯絡我們</h3>
+          </div>
+					<div style="margin-bottom:5px;"><a style="color:#666;text-decoration:underline" href="mailto:office@trunk.studio">office@trunk.studio</a></div>
+          <div style="margin-bottom:2em;">(04) 2201-9020</div>
+          <div class="fb-like" data-href="https://www.facebook.com/trunk.studio.tw/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 				</div>
-				<div class="copyright">
-          <p>創科資訊團隊</p>
+				<div class="copyright" style="color:#333;text-align:center;">
+          <a style="color:#AAA;" href="http://trunk.studio">Trunk-Studio 官方網站</a>
 				</div>
 			</div>
 			<!-- //container -->
@@ -328,19 +279,9 @@
 		<!-- //footer -->
 		<script type="text/javascript">
 				$(document).ready(function() {
-					/*
-					var defaults = {
-			  			containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear'
-			 		};
-					*/
-
 					$().UItoTop({ easingType: 'easeOutQuart' });
 				});
 			</script>
-			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- content-Get-in-touch -->
+			<a href="#" id="toTop" style="display:block;opacity:0.4;"><span id="toTopHover" style="opacity: 1;"></span></a>
 	</body>
 </html>

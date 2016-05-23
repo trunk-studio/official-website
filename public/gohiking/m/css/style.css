@@ -19,9 +19,11 @@ html,body {
    src: url(../fonts/OpenSans-Regular.ttf)format('truetype');
 }
 .header-bg{
-	background:#98d361;
-	background-size:cover;
+	/*background:#98d361;*/
 	padding-bottom: 8em;
+  background-size:cover;
+  /*background-image: url('../../assets/img/bg_5.jpg');*/
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(136, 136, 136, 0.1) 100%), url('../../assets/img/bg_5.jpg');
 }
 .header-top {
   padding-top: 0.5em;
@@ -80,11 +82,7 @@ html,body {
 }
 .banner-button{
 	float:left;
-	width: 31.8%;
-}
-.banner-button-2{
-  float:left;
-	width: 25.8%;
+	width: 41.8%;
 }
 .banner-button a img{
 	width:100%;
@@ -93,7 +91,8 @@ html,body {
 	margin:0 1em;
 }
 .mobile-device {
-  margin-top: 7em;
+  margin: 15px auto 0 auto;
+  width: 75%;
 }
 /*------------------ Slider Part starts Here----------*/
 #slider2,
@@ -304,11 +303,6 @@ ul.social-slide li i.mac{
 	display: inline-block;
 }
 
-
-.banner-info ul.callbacks_tabs {
-  display: none;
-}
-
 @media screen and (max-width: 600px) {
   .callbacks_nav {
     top: 47%;
@@ -354,7 +348,7 @@ ul.social-slide li i.mac{
   margin: 0;
 }
 .banner-text p{
-  color: #A0A0A0;
+  color: #606060;
   font-size: 1.2em;
   margin: 2em auto 0 auto;
   width: 72%;
@@ -367,19 +361,19 @@ ul.social-slide li i.mac{
 	text-align:center;
 }
 .banner-bottom-grid h4{
-  color: #747474;
+  color: #5d5d5d;
   margin: 2em 0 1em 0;
   font-size: 1.6em;
 }
 .banner-bottom-grid p{
-  color: #A0A0A0;
+  color: #7e7e7e;
   font-size: 1em;
   margin: 0 auto;
   width: 80%;
   line-height: 1.8em;
 }
 .services-icon {
-  background: #98D361;
+  background: #709D2A;
   width: 120px;
   height: 120px;
   line-height: 10em;
@@ -512,7 +506,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 .features-right-grid h5{
   margin: 5px 0 -0.5em 0;
   font-size: 1.6em;
-  color: #98D361;
+  color: #709D2A;
 }
 .design-right p{
   font-size: 1em !important;
@@ -667,8 +661,8 @@ color: #FFF;
 }
 /*-- footer --*/
 .footer{
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
-  background-size: cover;
+  /*background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background-size: cover;*/
   padding: 4em 0 1em 0;
 }
 .footer-info{
@@ -876,10 +870,7 @@ color: #FFF;
 /*-- responsive starts here --*/
 @media (max-width:1080px){
 	.banner-button {
-		width: 30.8%;
-	}
-  .banner-button-2 {
-		width: 24.8% !important;
+		width: 40.8%;
 	}
 	.banner-button a {
 		width: 165px;
@@ -935,7 +926,7 @@ color: #FFF;
 	}
 	.slid {
 		float: left;
-		width: 40%;
+		width: 100%;
 	}
 	.mobile-device img {
 		width: 100%;
@@ -952,9 +943,6 @@ color: #FFF;
 	}
 	.banner-bottom-grid h4 {
 		margin: 1em 0 0.5em 0;
-	}
-	.mobile-device {
-		margin-top: 4em;
 	}
 	.features-right h4 {
 		font-size: 30px;
@@ -1013,11 +1001,8 @@ color: #FFF;
 		width: 33%;
 	}
 	.banner-button {
-		width: 29.8%;
+		width: 39.8%;
 	}
-  .banner-button-2 {
-    width: 24.8% !important;
-  }
 	.banner-button a {
 		width: 117px;
 	}
@@ -1098,11 +1083,8 @@ color: #FFF;
 		float: none;
 	}
 	.banner-button {
-		width: 30.8%;
+		width: 40.8%;
 	}
-  .banner-button-2 {
-    width: 24.8% !important;
-  }
 	.banner-button a {
 		width: 128px;
 		height: 45px;
@@ -1111,10 +1093,6 @@ color: #FFF;
 		width: 100%;
 		float: left;
 		margin: 0 auto;
-	}
-	.mobile-device {
-		margin: 15px auto 0 auto;
-		width: 58%;
 	}
 	.callbacks_tabs a:after {
 		height: 13px;
@@ -1245,23 +1223,20 @@ color: #FFF;
 		font-size: 1.2em;
 	}
 	.banner-button {
-		width: 100%;
+		width: 40%;
+    /*margin-left: 0 !important;*/
 	}
 	.banner-button a {
 		width: 132px;
 		height: 47px;
 	}
 	.green-button {
-		margin: 1em 0;
+		/*margin: 1em 0;*/
 	}
 	.banner-button a {
 		width: 132px;
 		height: 47px;
 		margin: 0 auto;
-	}
-	.mobile-device {
-		margin: 1em auto 0 auto;
-		width: 64%;
 	}
 	.banner-text h3 {
 		font-size: 2em;
@@ -1320,10 +1295,10 @@ color: #FFF;
 		font-size: .9em;
 	}
 	.banner-button a img {
-	  width: 56%;
+	  /*width: 56%;*/
 	}
 	.header-bg {
-	  padding-bottom: 1em;
+	  /*padding-bottom: 1em;*/
 	}
 	.head-logo a {
 		font-size: 2em;
