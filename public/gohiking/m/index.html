@@ -1,76 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>台灣步道一指通 - Go Hiking App</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script>
-  var userAgent = navigator.userAgent;
-  console.log(userAgent);
-  if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
-  } else {
-    document.location.href = "../"
-  }
-</script>
-<script id="fb-root" type="text/javascript">
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
-  fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-<script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/styles.css?v=1.6" rel="stylesheet">
-<link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<style>
-.feature-blocks {
-  padding: 0 8% 1em 8%;
-  color: #FFF;
-  margin-top: -7em;
-  background-color: #5AA454;
-  width: 100%;
-  left: 0;
-  position: absolute;
-}
-.feature-blocks h5 {
-  font-size: 13pt;
-  margin: 1em 0 0.5em 0;
-  font-weight: 500;
-  color: #FFF;
-}
-.feature-blocks p {
-  font-size: 11pt;
-  margin: 0;
-  line-height: 1.7em;
-  color: #EFEFEF;
-  font-weight: 400;
-}
-.container p {
-  text-align: justify;
-}
-</style>
-<!-- js -->
-<script src="js/jquery.min.js"></script>
-<script src="js/scripts.js?v=1.7"></script>
-<!-- //js -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-</head>
+<html lang="zh_Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="登山,健行,步道,台灣健行,登山健行,運動,hiking" />
+    <meta name="description" content="首款為登山健行愛好者量身打造的 App，蒐錄國內數百條熱門登山路線，並整合來自農委會林務局的步道詳細資料、即時路況資訊，讓你隨時掌握最新的步道資訊！">
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣步道一指通 - Go Hiking App</title>
+
+    <script>
+      var userAgent = navigator.userAgent;
+      console.log(userAgent);
+      if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
+      } else {
+        document.location.href = "../"
+      }
+    </script>
+    <script id="fb-root" type="text/javascript">
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+    .feature-blocks {
+      padding: 0 8% 1em 8%;
+      color: #FFF;
+      margin-top: -7em;
+      background-color: #5AA454;
+      width: 100%;
+      left: 0;
+      position: absolute;
+    }
+    .feature-blocks h5 {
+      font-size: 13pt;
+      margin: 1em 0 0.5em 0;
+      font-weight: 500;
+      color: #FFF;
+    }
+    .feature-blocks p {
+      font-size: 11pt;
+      margin: 0;
+      line-height: 1.7em;
+      color: #EFEFEF;
+      font-weight: 400;
+    }
+    .container p {
+      text-align: justify;
+    }
+    </style>
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js?v=1.7"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+    	jQuery(document).ready(function($) {
+    		$(".scroll").click(function(event){
+    			event.preventDefault();
+    			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    		});
+    	});
+    </script>
+    <!-- start-smoth-scrolling -->
+  </head>
 	<body class="cbp-spmenu-push">
 		<!-- header -->
 		<div class="header-bg">
