@@ -10,7 +10,6 @@
 
     <script>
       var userAgent = navigator.userAgent;
-      console.log(userAgent);
       if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
       } else {
         document.location.href = "../"
@@ -35,41 +34,40 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <style>
-    .feature-blocks {
-      padding: 0 8% 1em 8%;
-      color: #FFF;
-      margin-top: -7em;
-      background-color: #5AA454;
-      width: 100%;
-      left: 0;
-      position: absolute;
-    }
-    .feature-blocks h5 {
-      font-size: 13pt;
-      margin: 1em 0 0.5em 0;
-      font-weight: 500;
-      color: #FFF;
-    }
-    .feature-blocks p {
-      font-size: 11pt;
-      margin: 0;
-      line-height: 1.7em;
-      color: #EFEFEF;
-      font-weight: 400;
-    }
-    .container p {
-      text-align: justify;
-    }
+      .feature-blocks {
+        padding: 0 8% 1em 8%;
+        color: #FFF;
+        margin-top: -7em;
+        background-color: #5AA454;
+        width: 100%;
+        left: 0;
+        position: absolute;
+      }
+      .feature-blocks h5 {
+        font-size: 13pt;
+        margin: 1em 0 0.5em 0;
+        font-weight: 500;
+        color: #FFF;
+      }
+      .feature-blocks p {
+        font-size: 11pt;
+        margin: 0;
+        line-height: 1.7em;
+        color: #EFEFEF;
+        font-weight: 400;
+      }
+      .container p {
+        text-align: justify;
+      }
     </style>
-    <!-- js -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/scripts.js?v=1.7"></script>
-    <!-- //js -->
     <!-- start-smoth-scrolling -->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
-    	jQuery(document).ready(function($) {
+    	$(document).ready(function($) {
     		$(".scroll").click(function(event){
     			event.preventDefault();
     			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
@@ -86,7 +84,6 @@
 						<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
 						  <nav class="pull">
 							<ul class="nav">
-							  <li><a href="#home" class="scroll">首頁</a></li>
                 <li><a href="#services" class="scroll">主要特色</a></li>
 							  <li><a href="#features" class="scroll">功能介紹</a></li>
 							  <li><a href="#contact" class="scroll">聯絡我們</a></li>
