@@ -7604,6 +7604,7 @@ p {
 }
 .list-ticked > li > .fa {
   background-color: #709D2A;
+  text-shadow: none !important;
 }
 /**
  * Colors
