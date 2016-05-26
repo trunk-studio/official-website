@@ -10,18 +10,17 @@
 
     <script>
       var userAgent = navigator.userAgent;
-      console.log(userAgent);
       if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
         document.location.href = "./m/"
       }
     </script>
     <script id="fb-root" type="text/javascript">
       (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
-      fjs.parentNode.insertBefore(js, fjs);
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
+        fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
@@ -31,15 +30,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="assets/css/styles_light.css" rel="stylesheet">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!-- Background Image -->
     <div class="bg-image"></div>
-
-    <!-- Background Colors -->
     <div class="bg-colors hidden" data-colors="#568CD3,#D3744C,#389E86,#9356D3,#D35D56,#587EA0,#518E7E"></div>
 
     <!-- Navigation -->
@@ -188,6 +183,9 @@
                 <li class="delay_2_2" data-animate-in="animateUp">
                   <i class="fa fa-check"></i> 個人最愛步道收藏、與朋友分享景點
                 </li>
+                <li class="delay_2_2" data-animate-in="animateUp">
+                  <a href="https://www.youtube.com/watch?v=CKT_VASF2v0&feature=youtu.be" target="_blank" style="color:#222;"><img height="90" src="./assets/img/ic_movie.png">操作 DEMO</a>
+                </li>
               </ul>
             </div>
           </div> <!-- / .row -->
@@ -335,7 +333,6 @@
               <h2 class="heading" data-animate-in="animateUp">
                 聯絡我們
               </h2>
-              <!-- Alert message -->
               <div class="alert" id="form_message" role="alert"></div>
               <form id="form_sendemail" class="delay_1" data-animate-in="animateUp">
                 <p>「台灣步道一指通」App 由創科資訊團隊開發，如有任何意見及建議歡迎與我們聯繫！</p>
