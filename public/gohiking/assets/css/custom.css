@@ -1,0 +1,17 @@
+.content-block {
+    color: #333333;
+    background: rgba(255,255,255,0.5);
+    padding: 15px;
+    font-size: 15pt;
+    border-radius: 5px;
+    font-family:serif;
+    letter-spacing: .5px;
+}
+.content-block a {
+    color: #000000;
+}
+
+.author-block {
+    color: #000000;
+    font-weight: 700;
+}
