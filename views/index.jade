@@ -642,8 +642,29 @@ html(lang='zh-Hant-TW')
         section#contact.section.section-hilite.section-center.section-contact
           .container
             h2.section-title
-              span 訪客留言板
-            .main-action
+              span 與我們聯繫
+          .container
+            .row
+              .col-sm-4
+                h3 Welcome!
+                p
+                  img.img-rounded(src='images/photo-3.min.jpg', alt='')
+                p.text-left 公司地址：台中市西區台灣大道二段2號16F-1
+                p.text-left 營業時間：09:00 - 18:00
+                p.text-left 聯繫：林先生
+                p.text-left Email：kyle@trunk-studio.com
+              .col-sm-4
+                h3 交通指南
+                ul.text-left
+                  li 靠近台灣大道與五權路口，一樓是彰化銀行。
+                  li Google Map 請搜尋「台中創科資訊」。
+                  li 從台中火車站或朝馬轉運站，轉乘台中市公車，建議搭乘300路（BRT藍線），請在「茄苳腳站」下車，步行約一分鐘即可抵達。
+                  li 國道三請下台中交流道（原中港交流道）。
+                  li 74快速道路請下「西屯二」交流道。
+                  li 辦公大樓 B1 有收費停車場（每半小時 10 元），台灣大道靠近日興街路口附近有嘟嘟房收費停車場，後方博館二街設有機車停車格。
+              .col-sm-4
+                img(src='images/map-2.png', alt='')
+            //- .main-action
               form(role='form' action='/contact' method='post')
                 .row
                   .col-sm-6
@@ -669,26 +690,28 @@ html(lang='zh-Hant-TW')
                       textarea.form-control(placeholder='留言訊息', name='message', style='height: 100px', rows='6')
 
                 button.btn.btn-default(type='submit') 訂閱通知
-        section#contact.section.section-center
-          .container
-            .row
-              .col-sm-4
-                h3 Welcome!
-                p
-                  img.img-rounded(src='images/photo-3.min.jpg', alt='')
-                p.text-left 公司地址：<br/>台中市西區台灣大道二段2號16F-1
-              .col-sm-4
-                h3 交通指南
-                ul.text-left
-                  li 靠近台灣大道與五權路口，一樓是彰化銀行。
-                  li Google Map 請搜尋「台中創科資訊」。
-                  li 從台中火車站或朝馬轉運站，轉乘台中市公車，建議搭乘300路（BRT藍線），請在「茄苳腳站」下車，步行約一分鐘即可抵達。
-                  li 國道三請下台中交流道（原中港交流道）。
-                  li 74快速道路請下「西屯二」交流道。
-                  li 辦公大樓 B1 有收費停車場（每半小時 10 元），台灣大道靠近日興街路口附近有嘟嘟房收費停車場，後方博館二街設有機車停車格。
-              .col-sm-4
-                img(src='images/map-1.png', alt='')
-
+        //- section#contact.section.section-center
+        //-   .container
+        //-     .row
+        //-       .col-sm-4
+        //-         h3 Welcome!
+        //-         p
+        //-           img.img-rounded(src='images/photo-3.min.jpg', alt='')
+        //-         p.text-left 公司地址：台中市西區台灣大道二段2號16F-1
+        //-         p.text-left 營業時間：09:00 - 18:00
+        //-         p.text-left 聯繫：林先生
+        //-         p.text-left Email：kyle@trunk-studio.com
+        //-       .col-sm-4
+        //-         h3 交通指南
+        //-         ul.text-left
+        //-           li 靠近台灣大道與五權路口，一樓是彰化銀行。
+        //-           li Google Map 請搜尋「台中創科資訊」。
+        //-           li 從台中火車站或朝馬轉運站，轉乘台中市公車，建議搭乘300路（BRT藍線），請在「茄苳腳站」下車，步行約一分鐘即可抵達。
+        //-           li 國道三請下台中交流道（原中港交流道）。
+        //-           li 74快速道路請下「西屯二」交流道。
+        //-           li 辦公大樓 B1 有收費停車場（每半小時 10 元），台灣大道靠近日興街路口附近有嘟嘟房收費停車場，後方博館二街設有機車停車格。
+        //-       .col-sm-4
+        //-         img(src='images/map-1.png', alt='')
       footer#footer.site-footer
         .container
           .row
