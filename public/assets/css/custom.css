@@ -1,4 +1,10 @@
 
+.readable {
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
 #topbar .phone-number {
   padding-left: 10px;
   letter-spacing: .5px;
