@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="登山,健行,步道,台灣健行,登山健行,運動,hiking" />
     <meta name="description" content="首款為登山健行愛好者量身打造的 App，蒐錄國內數百條熱門登山路線，並整合來自農委會林務局的步道詳細資料、即時路況資訊，讓你隨時掌握最新的步道資訊！">
@@ -10,25 +11,38 @@
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5FGQ9Z"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5FGQ9Z');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5FGQ9Z');
     </script>
     <!-- End Google Tag Manager -->
     <title>台灣步道一指通 - Go Hiking App</title>
 
     <script>
-      var userAgent = navigator.userAgent;
-      if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
-        document.location.href = "./m/"
-      }
+        var userAgent = navigator.userAgent;
+        if (/Mobile|Tablet|Android|iPhone|iPad/i.test(userAgent)) {
+            document.location.href = "./m/"
+        }
     </script>
     <script id="fb-root" type="text/javascript">
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=1683846725181307";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <link href="assets/plugins/fullpage/jquery.fullpage.min.css" rel="stylesheet">
@@ -40,357 +54,378 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <link href="assets/css/custom.css" rel="stylesheet" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="bg-image"></div>
     <div class="bg-colors hidden" data-colors="#568CD3,#D3744C,#389E86,#9356D3,#D35D56,#587EA0,#518E7E"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#welcome"><img width="110" src="assets/img/LOGO.png"></a>
+                <a class="navbar-brand" href="#welcome"><img width="110" src="assets/img/LOGO.png"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <a id="download_btn" href="#download" class="btn btn-lg navbar-right navbar-btn">
+                    <i class="fa fa-mobile" style="font-size:16pt;"></i><span style="font-size:14pt">立即下載</span>
+                </a>
+                <ul class="nav navbar-nav navbar-right menu">
+                    <li data-menuanchor="welcome">
+                        <a href="#welcome">首頁</a>
+                    </li>
+                    <li data-menuanchor="features">
+                        <a href="#features">特色</a>
+                    </li>
+                    <li data-menuanchor="feature1">
+                        <a href="#feature1">步道檢索</a>
+                    </li>
+                    <li data-menuanchor="feature2">
+                        <a href="#feature2">附近探索</a>
+                    </li>
+                    <li data-menuanchor="feature3">
+                        <a href="#feature3">分享步道</a>
+                    </li>
+                    <li data-menuanchor="review">
+                        <a href="#review">好評推薦</a>
+                    </li>
+                    <li data-menuanchor="contact-us">
+                        <a href="#contact-us">聯絡我們</a>
+                    </li>
+                    <li>
+                        <a href="#!" id="privacy-policy">隱私權政策</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <a id="download_btn" href="#download" class="btn btn-lg navbar-right navbar-btn">
-            <i class="fa fa-mobile" style="font-size:16pt;"></i><span style="font-size:14pt">立即下載</span>
-          </a>
-          <ul class="nav navbar-nav navbar-right menu">
-            <li data-menuanchor="welcome">
-              <a href="#welcome">首頁</a>
-            </li>
-            <li data-menuanchor="features">
-              <a href="#features">特色</a>
-            </li>
-            <li data-menuanchor="feature1">
-              <a href="#feature1">步道檢索</a>
-            </li>
-            <li data-menuanchor="feature2">
-              <a href="#feature2">附近探索</a>
-            </li>
-            <li data-menuanchor="feature3">
-              <a href="#feature3">分享步道</a>
-            </li>
-            <li data-menuanchor="review">
-              <a href="#review">好評推薦</a>
-            </li>
-            <li data-menuanchor="contact-us">
-              <a href="#contact-us">聯絡我們</a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
+        <!-- /.container -->
     </nav>
 
     <!-- Side menu -->
     <div class="side-menu hidden-xs hidden-sm">
-      <ul class="menu">
-        <li data-menuanchor="welcome">
-          <a href="#welcome"></a>
-        </li>
-        <li data-menuanchor="features">
-          <a href="#features"></a>
-        </li>
-        <li data-menuanchor="feature1">
-          <a href="#feature1"></a>
-        </li>
-        <li data-menuanchor="feature2">
-          <a href="#feature2"></a>
-        </li>
-        <li data-menuanchor="feature3">
-          <a href="#feature3"></a>
-        </li>
-        <li data-menuanchor="review">
-          <a href="#review"></a>
-        </li>
-        <li data-menuanchor="contact-us">
-          <a href="#contact-us"></a>
-        </li>
-        <li data-menuanchor="download">
-          <a href="#download"></a>
-        </li>
-      </ul>
+        <ul class="menu">
+            <li data-menuanchor="welcome">
+                <a href="#welcome"></a>
+            </li>
+            <li data-menuanchor="features">
+                <a href="#features"></a>
+            </li>
+            <li data-menuanchor="feature1">
+                <a href="#feature1"></a>
+            </li>
+            <li data-menuanchor="feature2">
+                <a href="#feature2"></a>
+            </li>
+            <li data-menuanchor="feature3">
+                <a href="#feature3"></a>
+            </li>
+            <li data-menuanchor="review">
+                <a href="#review"></a>
+            </li>
+            <li data-menuanchor="contact-us">
+                <a href="#contact-us"></a>
+            </li>
+            <li data-menuanchor="download">
+                <a href="#download"></a>
+            </li>
+        </ul>
     </div>
 
     <!-- Social links -->
     <div class="social-links hidden-xs hidden-sm" style="font-size:11px">
-      <ul>
-        <li style="text-align:center;font-size:12pt;">
-          資料來源
-        </li>
-        <li>
-          <a style="padding-top: 19px;" target="_blank" href="http://www.forest.gov.tw/">林務局</a>
-        </li>
-        <li>
-          <a style="padding-top: 10px;" target="_blank" href="http://recreation.forest.gov.tw/">台灣山林悠遊網</a>
-        </li>
-        <li>
-          <a style="padding-top: 18px;" target="_blank" href="http://tw.hiking.biji.co/">健行筆記</a>
-        </li>
-        <li>
-          <a style="padding-top: 7px;" target="_blank" href="http://www.keepon.com.tw/">登山<br/>補給站</a>
-        </li>
-      </ul>
-      <!--
+        <ul>
+            <li style="text-align:center;font-size:12pt;">
+                資料來源
+            </li>
+            <li>
+                <a style="padding-top: 19px;" target="_blank" href="http://www.forest.gov.tw/">林務局</a>
+            </li>
+            <li>
+                <a style="padding-top: 10px;" target="_blank" href="http://recreation.forest.gov.tw/">台灣山林悠遊網</a>
+            </li>
+            <li>
+                <a style="padding-top: 18px;" target="_blank" href="http://tw.hiking.biji.co/">健行筆記</a>
+            </li>
+            <li>
+                <a style="padding-top: 7px;" target="_blank" href="http://www.keepon.com.tw/">登山<br/>補給站</a>
+            </li>
+        </ul>
+        <!--
       <img src="http://www.forest.gov.tw/xslGIP/forest2008/images/h1.gif" alt="forest.gov.tw" class="img-responsive" style="width:96px" />
       -->
     </div>
 
     <!-- Devices -->
     <div class="device__container hidden-xs">
-      <!-- iPhone -->
-      <div class="iphone__container white">
-        <!-- Slides -->
-        <div class="iphone__screen">
-          <div class="device__slides">
-            <img src="assets/img/app-screenshots/gohiking_1.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_2.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_3.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_5.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_6.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_8.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_7.png" alt="...">
-            <img src="assets/img/app-screenshots/gohiking_1.png" alt="...">
-          </div>
+        <!-- iPhone -->
+        <div class="iphone__container white">
+            <!-- Slides -->
+            <div class="iphone__screen">
+                <div class="device__slides">
+                    <img src="assets/img/app-screenshots/gohiking_1.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_2.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_3.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_5.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_6.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_8.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_7.png" alt="...">
+                    <img src="assets/img/app-screenshots/gohiking_1.png" alt="...">
+                </div>
+            </div>
         </div>
-      </div>
-    </div> <!-- / .device__container -->
+    </div>
+    <!-- / .device__container -->
 
     <!-- Sections -->
     <div id="fullpage">
-      <!-- welcome -->
-      <section data-anchor="welcome">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <!--<h2 class="heading" data-animate-in="animateUp">
+        <!-- welcome -->
+        <section data-anchor="welcome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <!--<h2 class="heading" data-animate-in="animateUp">
                 台灣步道一指通
               </h2>-->
-              <p class="delay_1" data-animate-in="animateUp">
-                首款為登山健行愛好者量身打造的 App，蒐錄國內數百條熱門登山路線，並整合來自農委會林務局的步道詳細資料、即時路況資訊，讓你隨時掌握最新的步道資訊！
-              </p>
-              <ul class="list-ticked">
-                <li class="delay_2" data-animate-in="animateUp">
-                  <i class="fa fa-check"></i> 簡單易用，立即上手
-                </li>
-                <li class="delay_2_1" data-animate-in="animateUp">
-                  <i class="fa fa-check"></i> 離線資料檢索，山上不怕沒網路
-                </li>
-                <li class="delay_2_2" data-animate-in="animateUp">
-                  <i class="fa fa-check"></i> 來自林務局的即時資料更新
-                </li>
-                <li class="delay_2_2" data-animate-in="animateUp">
-                  <i class="fa fa-check"></i> 行動定位整合、搜尋鄰近步道超實用
-                </li>
-                <li class="delay_2_2" data-animate-in="animateUp">
-                  <i class="fa fa-check"></i> 個人最愛步道收藏、與朋友分享景點
-                </li>
-                <li class="delay_2_2" data-animate-in="animateUp" style="text-align:center;margin-top:30px;">
-                  <a id="movie_btn" href="https://www.youtube.com/watch?v=CKT_VASF2v0&feature=youtu.be" target="_blank" style="color:#222;"><img height="60" style="e;margin-right:10px;" src="./assets/img/ic_movie.png">觀看功能導覽 DEMO 影片</a>
-                </li>
-              </ul>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            首款為登山健行愛好者量身打造的 App，蒐錄國內數百條熱門登山路線，並整合來自農委會林務局的步道詳細資料、即時路況資訊，讓你隨時掌握最新的步道資訊！
+                        </p>
+                        <ul class="list-ticked">
+                            <li class="delay_2" data-animate-in="animateUp">
+                                <i class="fa fa-check"></i> 簡單易用，立即上手
+                            </li>
+                            <li class="delay_2_1" data-animate-in="animateUp">
+                                <i class="fa fa-check"></i> 離線資料檢索，山上不怕沒網路
+                            </li>
+                            <li class="delay_2_2" data-animate-in="animateUp">
+                                <i class="fa fa-check"></i> 來自林務局的即時資料更新
+                            </li>
+                            <li class="delay_2_2" data-animate-in="animateUp">
+                                <i class="fa fa-check"></i> 行動定位整合、搜尋鄰近步道超實用
+                            </li>
+                            <li class="delay_2_2" data-animate-in="animateUp">
+                                <i class="fa fa-check"></i> 個人最愛步道收藏、與朋友分享景點
+                            </li>
+                            <li class="delay_2_2" data-animate-in="animateUp" style="text-align:center;margin-top:30px;">
+                                <a id="movie_btn" href="https://www.youtube.com/watch?v=CKT_VASF2v0&feature=youtu.be" target="_blank" style="color:#222;"><img height="60" style="e;margin-right:10px;" src="./assets/img/ic_movie.png">觀看功能導覽 DEMO 影片</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div><!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- features -->
-      <section data-anchor="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                全新體驗，再攀巔峰
-              </h2>
-              <p class="delay_1" data-animate-in="animateUp">
-                你渴望挑戰的心情我們都聽到了，「台灣步道一指通」能夠瞬間為你找到附近適合的步道，天涯海角，盡在一指！
-              </p>
-              <p class="delay_1" data-animate-in="animateUp">
-                它不僅列出每條步道的特性、歷史、難易程度，與步道開放狀況，也為你精心準備了一張清楚易讀的步道路線圖，不需要網路、也不必導航，我們知道你就是自己最佳的方向指引。
-              </p>
+        <!-- features -->
+        <section data-anchor="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            全新體驗，再攀巔峰
+                        </h2>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            你渴望挑戰的心情我們都聽到了，「台灣步道一指通」能夠瞬間為你找到附近適合的步道，天涯海角，盡在一指！
+                        </p>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            它不僅列出每條步道的特性、歷史、難易程度，與步道開放狀況，也為你精心準備了一張清楚易讀的步道路線圖，不需要網路、也不必導航，我們知道你就是自己最佳的方向指引。
+                        </p>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- Text block -->
-      <section data-anchor="feature1">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                輕鬆檢索全國步道
-              </h2>
-              <p class="delay_1" data-animate-in="animateUp">
-                從上百條步道中找到理想的步道，竟然也能如此簡單！
-              </p>
-              <p class="delay_2" data-animate-in="animateUp">
-                任何人都能輕鬆快速地找到適合自己的步道，只需要點選欲尋找的區域和類型，我們能立即篩選出最適合你的步道。想要尋找中部的郊山嗎？沒問題！步道一指通讓你上山無懼、下山寫意！
-              </p>
+        <!-- Text block -->
+        <section data-anchor="feature1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            輕鬆檢索全國步道
+                        </h2>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            從上百條步道中找到理想的步道，竟然也能如此簡單！
+                        </p>
+                        <p class="delay_2" data-animate-in="animateUp">
+                            任何人都能輕鬆快速地找到適合自己的步道，只需要點選欲尋找的區域和類型，我們能立即篩選出最適合你的步道。想要尋找中部的郊山嗎？沒問題！步道一指通讓你上山無懼、下山寫意！
+                        </p>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- feature2 -->
-      <section data-anchor="feature2">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                探索附近最棒的步道
-              </h2>
-              <p class="delay_1" data-animate-in="animateUp">
-                假日想出外去走走，卻又不想跑太遠嗎？相信我，步道一指通絕對能滿足你的需求！
-              </p>
-              <p class="delay_1" data-animate-in="animateUp">
-                我們透過精準的 GPS 定位，讓使用者在家就可規劃行車路線，最完整豐富的步道資訊盡收在你眼前！
-              </p>
+        <!-- feature2 -->
+        <section data-anchor="feature2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            探索附近最棒的步道
+                        </h2>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            假日想出外去走走，卻又不想跑太遠嗎？相信我，步道一指通絕對能滿足你的需求！
+                        </p>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            我們透過精準的 GPS 定位，讓使用者在家就可規劃行車路線，最完整豐富的步道資訊盡收在你眼前！
+                        </p>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- feature2 -->
-      <section data-anchor="feature3">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                分享你喜愛的步道
-              </h2>
-              <p class="delay_1" data-animate-in="animateUp">
-                還記得上次美不勝收的風景嗎？美麗的回憶值得一再回味，更值得與好友分享。
-              </p>
-              <p class="delay_1" data-animate-in="animateUp">
-                在「台灣步道一指通」，任何人都可以收藏自己喜愛的步道，分享台灣最美的山林景觀！
-              </p>
+        <!-- feature2 -->
+        <section data-anchor="feature3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            分享你喜愛的步道
+                        </h2>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            還記得上次美不勝收的風景嗎？美麗的回憶值得一再回味，更值得與好友分享。
+                        </p>
+                        <p class="delay_1" data-animate-in="animateUp">
+                            在「台灣步道一指通」，任何人都可以收藏自己喜愛的步道，分享台灣最美的山林景觀！
+                        </p>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- review -->
-      <section data-anchor="review">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                來自用戶的口碑推薦
-              </h2>
-              <div id="carousel_custom" class="carousel slide">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner delay_1" role="listbox" data-animate-in="animateUp">
+        <!-- review -->
+        <section data-anchor="review">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            來自用戶的口碑推薦
+                        </h2>
+                        <div id="carousel_custom" class="carousel slide">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner delay_1" role="listbox" data-animate-in="animateUp">
 
-                  <div class="item active">
-                    <p class="content-block">
-                        利用快速篩選功能，即可透過區域及步道類型初步找出適合的步道，每條步道皆可清楚分別難易度，並提供詳細的介紹與步道的開放狀況，讓你出發前就能先行規劃，也可透過「附近步道」的搜尋功能，利用定位資訊快速找到離自己最近的步道。想挑戰台灣步道走透透嗎？「台灣步道」肯定是必備的輔助 App 唷！（<a href="https://briian.com/36315/gohiking.html" target="_blank">閱讀推薦原文</a>）
-                    </p>
-                    <p class="author-block">
-                        重灌狂人 - 知名部落格
-                    </p>
-                  </div>
+                                <div class="item active">
+                                    <p class="content-block">
+                                        利用快速篩選功能，即可透過區域及步道類型初步找出適合的步道，每條步道皆可清楚分別難易度，並提供詳細的介紹與步道的開放狀況，讓你出發前就能先行規劃，也可透過「附近步道」的搜尋功能，利用定位資訊快速找到離自己最近的步道。想挑戰台灣步道走透透嗎？「台灣步道」肯定是必備的輔助 App 唷！（<a href="https://briian.com/36315/gohiking.html" target="_blank">閱讀推薦原文</a>）
+                                    </p>
+                                    <p class="author-block">
+                                        重灌狂人 - 知名部落格
+                                    </p>
+                                </div>
 
-                  <div class="item">
-                    <p class="content-block">
-                      『登山步道資料好豐富！發現好多之前不知道的步道，假日又有新去處可以探索了，感謝開發團隊的用心整理！』
-                    </p>
-                    <p class="author-block">
-                      <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people1.png">
-                      Manish Wang - Climber
-                    </p>
-                  </div>
-                  <div class="item">
-                    <p class="content-block">
-                      『第一次使用步道一指通，意外發現 3 條景色優美的登山路線，而且只要半小時車程就能抵達，真是太棒了！』
-                    </p>
-                    <p class="author-block">
-                      <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people2.png">
-                      Christine Yeh - Travel Blogger
-                    </p>
-                  </div>
-                  <div class="item">
-                    <p class="content-block">
-                      『因為山友分享了爬不同步道的經驗，所以我開始使用台灣步道一指通，從只有爬離家最近的步道，到挑戰不同步道，累積了很多經驗，現在換我分享給朋友，讓我們一起來爬登山步道吧！』
-                    </p>
-                    <p class="author-block">
-                      <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people5.png">
-                      Gloria Chen - Hiking Lover
-                    </p>
-                  </div>
-                  <div class="item">
-                    <p class="content-block">
-                      『我很常去爬登山步道，很推薦使用台灣步道一指通，在山上的時候也很適合用，操作簡單快速，離線也可以查看資料，真的很實用！』
-                    </p>
-                    <p class="author-block">
-                      <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people4.png">
-                      Ryan Lee - Mountain Lover
-                    </p>
-                  </div>
-                </div> <!-- / .carousel-inner -->
-                <!-- Indicators -->
-                <ol class="carousel-indicators delay_2" data-animate-in="animateUp">
-                  <li data-target="#carousel_custom" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel_custom" data-slide-to="1"></li>
-                  <li data-target="#carousel_custom" data-slide-to="2"></li>
-                  <li data-target="#carousel_custom" data-slide-to="3"></li>
-                </ol>
-              </div> <!-- / .carousel -->
+                                <div class="item">
+                                    <p class="content-block">
+                                        『登山步道資料好豐富！發現好多之前不知道的步道，假日又有新去處可以探索了，感謝開發團隊的用心整理！』
+                                    </p>
+                                    <p class="author-block">
+                                        <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people1.png"> Manish Wang - Climber
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="content-block">
+                                        『第一次使用步道一指通，意外發現 3 條景色優美的登山路線，而且只要半小時車程就能抵達，真是太棒了！』
+                                    </p>
+                                    <p class="author-block">
+                                        <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people2.png"> Christine Yeh - Travel Blogger
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="content-block">
+                                        『因為山友分享了爬不同步道的經驗，所以我開始使用台灣步道一指通，從只有爬離家最近的步道，到挑戰不同步道，累積了很多經驗，現在換我分享給朋友，讓我們一起來爬登山步道吧！』
+                                    </p>
+                                    <p class="author-block">
+                                        <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people5.png"> Gloria Chen - Hiking Lover
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="content-block">
+                                        『我很常去爬登山步道，很推薦使用台灣步道一指通，在山上的時候也很適合用，操作簡單快速，離線也可以查看資料，真的很實用！』
+                                    </p>
+                                    <p class="author-block">
+                                        <img style="border-radius:30px;margin-right:10px;" width="60" src="./assets/img/avatar/people4.png"> Ryan Lee - Mountain Lover
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- / .carousel-inner -->
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators delay_2" data-animate-in="animateUp">
+                                <li data-target="#carousel_custom" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_custom" data-slide-to="1"></li>
+                                <li data-target="#carousel_custom" data-slide-to="2"></li>
+                                <li data-target="#carousel_custom" data-slide-to="3"></li>
+                            </ol>
+                        </div>
+                        <!-- / .carousel -->
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- Contact -->
-      <section data-anchor="contact-us">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h2 class="heading" data-animate-in="animateUp">
-                聯絡我們
-              </h2>
-              <div class="alert" id="form_message" role="alert"></div>
-              <form id="form_sendemail" class="delay_1" data-animate-in="animateUp">
-                <p>「台灣步道一指通」App 由創科資訊團隊開發，如有任何意見及建議歡迎與我們聯繫！</p>
-                <ul style="line-height: 200%">
-                  <li>聯絡電話：(04) 2201-9020</li>
-                  <li>Email：<a href="http://trunk.studio/" style="color: #333;" class="btn-link">office@trunk.studio</a></li>
-                  <li>官方網站：<a href="http://trunk.studio/" style="color: #333;" class="btn-link">http://trunk.studio/</a></li>
-                  <div style="margin-top:10px;" class="fb-like" data-href="https://www.facebook.com/trunk.studio.tw/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-                </ul>
-              </form>
+        <!-- Contact -->
+        <section data-anchor="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h2 class="heading" data-animate-in="animateUp">
+                            聯絡我們
+                        </h2>
+                        <div class="alert" id="form_message" role="alert"></div>
+                        <form id="form_sendemail" class="delay_1" data-animate-in="animateUp">
+                            <p>「台灣步道一指通」App 由創科資訊團隊開發，如有任何意見及建議歡迎與我們聯繫！</p>
+                            <ul style="line-height: 200%">
+                                <li>聯絡電話：(04) 2201-9020</li>
+                                <li>Email：<a href="http://trunk.studio/" style="color: #333;" class="btn-link">office@trunk.studio</a></li>
+                                <li>官方網站：<a href="http://trunk.studio/" style="color: #333;" class="btn-link">http://trunk.studio/</a></li>
+                                <div style="margin-top:10px;" class="fb-like" data-href="https://www.facebook.com/trunk.studio.tw/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
 
-      <!-- download -->
-      <section data-anchor="download">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
-              <h1 class="heading" data-animate-in="animateUpDown">
-                Let's Go Hiking!
-              </h1>
-              <p class="delay_1" data-animate-in="animateUpDown">
-                「台灣步道一指通」正式登陸 iOS 與 Android 雙平台！再次感謝大家的支持，App 好評熱烈下載中！
-              </p>
-              <a href="https://itunes.apple.com/us/app/tai-wan-bu-dao1zhi-tong/id1113267807?l=zh&ls=1&mt=8" class="delay_2 download_link" data-animate-in="animateUpDown">
-                <img height="50" src="assets/img/app_ios_store.png">
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.trunksys.gohiking" class="delay_2 download_link" data-animate-in="animateUpDown">
-                <img height="50" src="assets/img/app_play_store.png">
-              </a>
+        <!-- download -->
+        <section data-anchor="download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-6">
+                        <h1 class="heading" data-animate-in="animateUpDown">
+                            Let's Go Hiking!
+                        </h1>
+                        <p class="delay_1" data-animate-in="animateUpDown">
+                            「台灣步道一指通」正式登陸 iOS 與 Android 雙平台！再次感謝大家的支持，App 好評熱烈下載中！
+                        </p>
+                        <a href="https://itunes.apple.com/us/app/tai-wan-bu-dao1zhi-tong/id1113267807?l=zh&ls=1&mt=8" class="delay_2 download_link" data-animate-in="animateUpDown">
+                            <img height="50" src="assets/img/app_ios_store.png">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.trunksys.gohiking" class="delay_2 download_link" data-animate-in="animateUpDown">
+                            <img height="50" src="assets/img/app_play_store.png">
+                        </a>
+                    </div>
+                </div>
+                <!-- / .row -->
             </div>
-          </div> <!-- / .row -->
-        </div><!-- / .container -->
-      </section>
+            <!-- / .container -->
+        </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -398,6 +433,9 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="assets/plugins/fullpage/jquery.fullpage.min.js"></script>
     <script src="assets/plugins/contact-form/contact.js"></script>
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/js/pdfobject.min.js"></script>
     <script src="assets/js/custom.js"></script>
-  </body>
+</body>
+
 </html>
