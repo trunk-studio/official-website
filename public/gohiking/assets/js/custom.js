@@ -208,7 +208,7 @@ $(function() {
         });
         dialog.init();
 
-        PDFObject.embed("assets/privacy-policy.pdf", "#privacy-policy-reader");
+        PDFObject.embed("https://s3-ap-northeast-1.amazonaws.com/s3.trunksys.com/hiking/assets/privacy-policy.pdf", "#privacy-policy-reader");
         $('#privacy-policy-reader').css('height', $(window).height() * 0.8);
         $('.modal-dialog').css('width', '80%');
     });
